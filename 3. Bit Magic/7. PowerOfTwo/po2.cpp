@@ -4,9 +4,11 @@ using namespace std;
 // Assmption n>=0
 bool powerOfTwo(int n)
 {
+    // corner case
     if (n == 0)
         return false;
 
+    // logic:
     while (n != 1) // if at any point division gives odd num => not power of 2
     {
         if (n % 2 != 0)
@@ -14,6 +16,7 @@ bool powerOfTwo(int n)
         n /= 2;
     }
 
+    // answer
     return true;
 }
 
@@ -28,7 +31,10 @@ bool towsPowerUsingBriansAlgorithm(int n)
 // Driver code
 int main()
 {
+    // Given number
     int num = 16;
+
+    // fn call
     cout << powerOfTwo(num) << "\n";
     cout << towsPowerUsingBriansAlgorithm(num) << "\n";
 }
