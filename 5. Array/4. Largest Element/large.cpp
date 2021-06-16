@@ -46,8 +46,8 @@ int secondLargest(int *arr, int size)
 int main()
 {
     // Given array
-    int size = 6;
-    int arr[size] = {7, 52, 91, 1, 72};
+    int arr[] = {7, 52, 91, 1, 72};
+    int size = sizeof(arr) / sizeof(arr[0]);
 
     // fn call
     int max = largest(arr, size);

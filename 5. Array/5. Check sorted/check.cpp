@@ -17,8 +17,8 @@ bool checkSorted(int arr[], int size)
 int main()
 {
     // Given array
-    int size = 5;
-    int arr[size] = {1, 2, 8, 8, 52};
+    int arr[] = {1, 2, 8, 8, 52};
+    int size = sizeof(arr) / sizeof(arr[0]);
 
     // print
     bool isSorted = checkSorted(arr, size);
