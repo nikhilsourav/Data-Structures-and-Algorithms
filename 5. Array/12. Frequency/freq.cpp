@@ -24,8 +24,8 @@ void printFrequency(int *arr, int size)
 int main()
 {
     // Given arrary
-    int size = 4;
-    int arr[size] = {10, 10, 10, 10};
+    int arr[] = {10, 10, 10, 10};
+    int size = sizeof(arr) / sizeof(arr[0]);
 
     // display frequency
     printFrequency(arr, size);

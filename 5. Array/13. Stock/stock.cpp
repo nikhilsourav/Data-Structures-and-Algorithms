@@ -20,8 +20,8 @@ int maxProfit(int *arr, int size)
 int main()
 {
     // Given array
-    int size = 6;
-    int arr[size] = {1, 5, 3, 1, 2, 8};
+    int arr[] = {1, 5, 3, 1, 2, 8};
+    int size = sizeof(arr) / sizeof(arr[0]);
 
     // fn call
     cout << maxProfit(arr, size);

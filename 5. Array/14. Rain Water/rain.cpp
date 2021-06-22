@@ -57,8 +57,8 @@ int trappedWaterEfficient(int arr[], int size)
 int main()
 {
     // Given array
-    int size = 7;
-    int arr[size] = {8, 8, 2, 4, 5, 5, 1};
+    int arr[] = {8, 8, 2, 4, 5, 5, 1};
+    int size = sizeof(arr) / sizeof(arr[0]);
 
     // fn call
     cout << trappedWater(arr, size);
