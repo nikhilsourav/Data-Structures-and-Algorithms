@@ -97,8 +97,8 @@ int efficientMaxCircularSum(int arr[], int n)
 int main()
 {
     // Given array
-    int size = 4;
-    int arr[size] = {5, -2, 3, 4};
+    int arr[] = {5, -2, 3, 4};
+    int size = sizeof(arr) / sizeof(arr[0]);
 
     // fn call
     cout << maxCircularSum(arr, size) << "\n";

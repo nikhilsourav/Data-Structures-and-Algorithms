@@ -62,8 +62,8 @@ int efficientMajority(int arr[], int n)
 int main()
 {
     // Given array
-    int size = 5;
-    int arr[size] = {6, 8, 4, 8, 8};
+    int arr[] = {6, 8, 4, 8, 8};
+    int size = sizeof(arr) / sizeof(arr[0]);
 
     // fn call
     cout << majority(arr, size) << "\n";

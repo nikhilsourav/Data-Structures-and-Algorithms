@@ -83,8 +83,8 @@ void modify(int *arr, int size)
 int main()
 {
     // Given array
-    int size = 5;
-    int arr[size] = {1, 2, 3, 4, 5};
+    int arr[] = {1, 2, 3, 4, 5};
+    int size = sizeof(arr) / sizeof(arr[0]);
 
     // fn call
     modify(arr, size);
