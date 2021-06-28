@@ -30,5 +30,6 @@ int power(int x, int n)
 // Driver code
 int main()
 {
+    // fn call
     cout << power(3, 2);
 }

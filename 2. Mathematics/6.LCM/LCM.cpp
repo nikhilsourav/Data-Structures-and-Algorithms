@@ -22,8 +22,11 @@ int getLCM(int x, int y)
 // effeicient solution
 int getGCD(int a, int b)
 {
+    // base case
     if (b == 0)
         return a;
+
+    // recursion
     else
         return getGCD(b, a % b);
 }
@@ -35,7 +38,10 @@ int getLCMefficiently(int x, int y)
 // Driver code
 int main()
 {
+    // Given numbers
     int a = 7, b = 3;
+
+    // fn call
     cout << getLCMefficiently(a, b) << "\n";
 }
 

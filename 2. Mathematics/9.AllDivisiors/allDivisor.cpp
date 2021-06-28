@@ -28,6 +28,9 @@ void printDivisorEfficiently(int n)
 // Driver code
 int main()
 {
+    // Given number
     int n = 50;
+
+    // fn call
     printDivisorEfficiently(n);
 }

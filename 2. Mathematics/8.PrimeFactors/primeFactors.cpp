@@ -4,19 +4,23 @@ using namespace std;
 // Naive solution O(n2 * log n)
 bool isPrime(int number)
 {
+    // corner case
     if (number == 1)
         return false;
 
+    // logic:
     for (int i = 2; i * i <= number; i++)
         if (number % i == 0)
             return false;
 
+    // answer
     return true;
 }
 
 void primeFactorNaive(int n)
 {
     for (int i = 2; i < n; i++)
+    {
         if (isPrime(i))
         {
             // if prime check for number of factors to next power
@@ -27,6 +31,7 @@ void primeFactorNaive(int n)
                 x *= i;
             }
         }
+    }
 }
 
 // better solution
@@ -88,6 +93,9 @@ void printFactorOptimized(int n)
 // Driver code
 int main()
 {
+    // Given number
     int n = 227;
+
+    // fn call
     primeFactorEfficient(n);
 }

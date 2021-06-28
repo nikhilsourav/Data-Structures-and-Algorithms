@@ -25,5 +25,7 @@ int main()
 {
     // Given number
     int num = 5;
+
+    // fn call
     cout << countSetBit(num);
 }

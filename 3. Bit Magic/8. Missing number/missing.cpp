@@ -17,10 +17,12 @@ int findNumber(int arr[], int n)
     // init variable
     int found = 0;
 
-    for (int i = 0; i < n; i++) // XOR of all number in array
+    // XOR of all number in array
+    for (int i = 0; i < n; i++)
         found ^= arr[i];
 
-    for (int i = 1; i <= n + 1; i++) // XOR of all number from 1 to n+1
+    // XOR of all number from 1 to n+1
+    for (int i = 1; i <= n + 1; i++)
         found ^= i;
 
     // answer
@@ -30,6 +32,10 @@ int findNumber(int arr[], int n)
 // Driver code
 int main()
 {
+    // Given arr
     int arr[] = {1, 4, 3, 2};
-    cout << findNumber(arr, 4);
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    // fn call
+    cout << findNumber(arr, n);
 }

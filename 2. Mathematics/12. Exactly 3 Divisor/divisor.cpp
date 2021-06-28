@@ -8,10 +8,12 @@ using namespace std;
 // check whether number is prime
 bool isPrime(int number)
 {
+    // logic
     for (int i = 2; i * i <= number; i++)
         if (number % i == 0)
             return false;
 
+    // answer
     return true;
 }
 
@@ -37,6 +39,7 @@ int exactly3Divisors(int number)
 // Driver code
 int main()
 {
-    int N = 8219;
-    cout << exactly3Divisors(N);
+    // Given number
+    int num = 8219;
+    cout << exactly3Divisors(num);
 }

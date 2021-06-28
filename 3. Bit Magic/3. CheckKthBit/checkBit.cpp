@@ -8,21 +8,28 @@ bool checkSetBitWithLeftShift(int n, int k)
     if ((n & (1 << (k - 1))) != 0)
         return true;
 
+    // answer
     return false;
 }
 
 // same concept, but with right shift
 bool checkSetBitWithRightShift(int n, int k)
 {
+    // logic
     if ((n >> (k - 1)) & 1 == 1)
         return true;
 
+    // answer
     return false;
 }
 
 // Driver code
 int main()
 {
-    cout << checkSetBitWithLeftShift(9, 2) << "\n";
-    cout << checkSetBitWithRightShift(9, 2) << "\n";
+    // Given numbers
+    int num1 = 9, num2 = 2;
+
+    // fn call
+    cout << checkSetBitWithLeftShift(num1, num2) << "\n";
+    cout << checkSetBitWithRightShift(num1, num2) << "\n";
 }

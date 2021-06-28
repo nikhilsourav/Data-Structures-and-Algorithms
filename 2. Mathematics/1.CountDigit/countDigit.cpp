@@ -21,8 +21,11 @@ int countDigitsIteratively(long n)
 // recursive soln O(n)
 int countDigitsRecursively(long n)
 {
+    // base case
     if (n == 0)
         return 0;
+
+    // recursion
     return 1 + countDigitsRecursively(n / 10);
 }
 
@@ -35,7 +38,9 @@ int countDigitsEfficiently(long n)
 // Driver code
 int main()
 {
-    // given number
+    // Given number
     int n = 2179;
+
+    // fn call
     cout << countDigitsEfficiently(n);
 }

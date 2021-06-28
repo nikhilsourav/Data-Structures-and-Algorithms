@@ -47,7 +47,10 @@ int optimizedEuclid(int a, int b)
 // Driver code
 int main()
 {
+    // Given numbers
     int a = 4, b = 6;
+
+    // fn call
     cout << optimizedEuclid(a, b) << "\n";
 }
 

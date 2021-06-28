@@ -41,6 +41,9 @@ void optimizedSieveOfEratosthenes(int n)
 
 int main()
 {
+    // Given number
     int n = 100;
+
+    // fn call
     sieveOfEratosthenes(n);
 }

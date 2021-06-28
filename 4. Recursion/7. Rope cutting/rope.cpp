@@ -23,6 +23,9 @@ int rope(int n, int a, int b, int c)
 // Driver code
 int main()
 {
+    // Given numbers
     int n = 9, a = 2, b = 2, c = 2;
+
+    // fn call
     cout << rope(n, a, b, c);
 }

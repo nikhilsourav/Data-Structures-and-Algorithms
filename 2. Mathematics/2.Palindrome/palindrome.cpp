@@ -25,6 +25,6 @@ int main()
     // given number
     int num = 121;
 
-    // output
+    // fn call
     checkPalindrome(num) ? cout << "Palindrome" : cout << "Not a palindrome";
 }

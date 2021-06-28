@@ -29,6 +29,9 @@ int factRecursive(int n)
 // Driver code
 int main()
 {
+    // Given number
+    int num = 6;
+
     // fn call
-    cout << factRecursive(6);
+    cout << factRecursive(num);
 }

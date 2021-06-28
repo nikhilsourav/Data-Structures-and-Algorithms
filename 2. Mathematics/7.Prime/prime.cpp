@@ -41,13 +41,16 @@ bool checkPrime_MethodTwo(LL number)
 // =============== third logic O(sqrt(n)) ================= //
 bool checkPrime_MethodThree(LL number)
 {
+    // corner case
     if (number == 1)
         return false;
 
+    // logic
     for (int i = 2; i * i <= number; i++)
         if (number % i == 0)
             return false;
 
+    // answer
     return true;
 }
 
@@ -73,14 +76,17 @@ bool checkPrimeEfficiently(LL number)
 // Driver code
 int main()
 {
+    // Given number
     LL num = 10092003300140014003;
+
+    // fn call
     cout << checkPrimeEfficiently(num) << "\n";
 }
 
 /*
     NOTES:
     * Main idea of square root method: if we find a divisor below sqrt(n) it's not prime.
-    * Even if n has a divisor > sqrt(n) we don't need to check it as it's pair must've been found.
+    * Even if n has a divisor > sqrt(n) we don't need to check it as it's pair must've already been found.
     * Note that every prime number can be represented as 6n+1 or 6n-1 except 2 and 3
     * 2 and 3 are only two consecutive prime
     * https://www.youtube.com/watch?v=T0XbxCYLBmc *8:00

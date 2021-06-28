@@ -37,5 +37,5 @@ int main()
     int n = 23;
 
     // fn call
-    cout << swap(23);
+    cout << swap(n);
 }

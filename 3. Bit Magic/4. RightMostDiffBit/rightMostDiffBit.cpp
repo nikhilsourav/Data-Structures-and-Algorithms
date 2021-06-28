@@ -8,9 +8,11 @@ using namespace std;
 // check kth bit is set or not
 bool checkSetBit(int n, int k)
 {
+    // logic
     if ((n & (1 << (k - 1))) != 0)
         return true;
 
+    // fn call
     return false;
 }
 

@@ -24,18 +24,25 @@ int countZeros(int n)
 // efficient way O(log n)
 int countZerosEfficiently(int n)
 {
+    // init var
     int count = 0;
+
+    // logic:
     for (int i = 5; i <= n; i *= 5) // count 2 and 5 which are the reason for trailing zeros
         count += n / i;             // sum of floor of n/i
 
+    // answer
     return count;
 }
 
 // Driver code
 int main()
 {
+    // Given number
+    int num = 10;
+
     // fn call
-    cout << "counted efficiently: " << countZerosEfficiently(10) << "\n";
+    cout << "counted efficiently: " << countZerosEfficiently(num) << "\n";
 }
 
 /*

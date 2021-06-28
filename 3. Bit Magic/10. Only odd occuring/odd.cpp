@@ -29,7 +29,8 @@ int main()
 {
     // Given array
     int arr[] = {4, 2, 4, 4, 5, 5, 4, 3, 2};
+    int n = sizeof(arr) / sizeof(arr[0]);
 
     // fn call
-    cout << findOddOccurance(arr, 9);
+    cout << findOddOccurance(arr, n);
 }
