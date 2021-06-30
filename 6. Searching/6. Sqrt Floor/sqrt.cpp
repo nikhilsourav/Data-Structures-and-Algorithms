@@ -1,3 +1,6 @@
+/*
+    Given an integer, find floor of its square root..
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -40,7 +43,7 @@ int binarySerach(int num)
 int main()
 {
     // Given number
-    int num = 10;
+    int num = 27;
 
     // fn call
     cout << binarySerach(num);
