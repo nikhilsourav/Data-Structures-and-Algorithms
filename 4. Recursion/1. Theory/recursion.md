@@ -1,16 +1,22 @@
-- ## Recursion: function calling itself.
+## Recursion:
 
-<br></br>
+- Function calling itself directly or indirectly is called recursion and the corresponding function is called recursive function.
 
-- ## Typical Recursion structure:
+- Types of recursion
+  - Head recursion
+  - Tail recursion
 
-  ```
-  ...fun(...){
-      base case
-      ...
+</br>
 
-      Recursive call (i.e. call to fun())
-      with at least one change in parameter
-  }
+## Recursion structure:
 
-  ```
+```
+ ...fun(...){
+     base case
+     ...
+
+     Recursive call (i.e. call to fun())
+     with at least one change in parameter
+ }
+
+```

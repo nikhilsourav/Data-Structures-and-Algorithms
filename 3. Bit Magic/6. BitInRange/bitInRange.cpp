@@ -17,6 +17,8 @@ int countSetBits(int n)
     return ((pow(2, x - 1) * x) + (n - pow(2, x) + 1) + countSetBits(n - pow(2, x)));
     // https://www.youtube.com/watch?v=g6OxU-hRGtY&t=6s
 }
+
+// Driver code
 int main()
 {
     // Given number

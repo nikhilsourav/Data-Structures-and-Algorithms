@@ -43,8 +43,8 @@ int search(int nums[], int size, int target)
 int main()
 {
     // Given array
-    int size = 7;
-    int arr[size] = {6, 7, 1, 2, 3, 4, 5};
+    int arr[] = {6, 7, 1, 2, 3, 4, 5};
+    int size = sizeof(arr) / sizeof(arr[0]);
 
     // fn call
     cout << search(arr, size, 7);

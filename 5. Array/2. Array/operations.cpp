@@ -49,8 +49,8 @@ void deleteElement(int *arr, int size, int position)
 int main()
 {
     // Given array
-    int capacity = 11;
-    int arr[capacity] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int capacity = sizeof(arr) / sizeof(arr[0]);
 
     // Get i-th or update i-th element
     int el = arr[8]; // O(1)
