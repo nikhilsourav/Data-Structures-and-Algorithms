@@ -6,7 +6,7 @@
 
 - Contains theories and programming questions related to fundamentals of data structures and algorithms
 - Every topic is in sequence and has a separate folder.
-- Within each folder, there are various sub-folders with theory and questions relate to that topic
+- Within each folder, there are various sub-folders with theory and questions related to that topic
 - All codes are written in c++ programming language
 
 <br/>
