@@ -11,7 +11,7 @@
 
 <br/>
 
-## Want to contribute?:
+## Want to contribute ?
 
 - If you found any typo / logical error / runtime error or you want to add another topic, feel free to create a pull request.
 
