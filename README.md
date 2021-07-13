@@ -27,9 +27,10 @@
 
 - **Are there any rules ?**
 
-  - Not particularly, just keep the indentation clean
+  - Nothing strict, just keep the indentation clean
   - Use comments wherever necessary
-  - Follow folder structure and use appropriate variable names
+  - Follow folder and file structure
+  - Use appropriate variable names
 
 <br/>
 
