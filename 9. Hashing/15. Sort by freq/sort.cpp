@@ -32,6 +32,7 @@ vector<int> sortByFreq(int arr[], int n)
     return result;
 }
 
+// Driver code
 int main()
 {
     // Given array
