@@ -28,9 +28,9 @@ void bubbleSort(int arr[], int size)
                 swap(arr[j], arr[j + 1]);
                 swapped = true;
             }
-            if (swapped == false)
-                break;
         }
+        if (swapped == false)
+            break;
     }
 
     return;
