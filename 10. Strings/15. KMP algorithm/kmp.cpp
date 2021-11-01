@@ -1,8 +1,11 @@
-// Construct longest proper-prefix and suffix array
+/*
+    Knuth–Morris–Pratt algorithm for pattern searching
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// build LPS array
+// Build LPS array
 void fillLPS(string &str, int *LPS)
 {
     // init size

@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// previous greater element
+// Previous greater element
 vector<int> prevGreat(vector<int> arr)
 {
     // init stack and vector
@@ -31,7 +31,7 @@ vector<int> prevGreat(vector<int> arr)
     return ans;
 }
 
-// next greater element
+// Next greater element
 vector<int> nextGreat(vector<int> arr)
 {
     // init stack and vector
@@ -64,7 +64,7 @@ vector<int> nextGreat(vector<int> arr)
     return ans;
 }
 
-// previous smaller element
+// Previous smaller element
 vector<int> prevSmall(vector<int> arr)
 {
     // init stack and vector
@@ -93,7 +93,7 @@ vector<int> prevSmall(vector<int> arr)
     return ans;
 }
 
-// next smaller element
+// Next smaller element
 vector<int> nextSmall(vector<int> arr)
 {
     // init stack and vector
@@ -126,7 +126,7 @@ vector<int> nextSmall(vector<int> arr)
     return ans;
 }
 
-// print vector
+// Print vector
 void printIndex(vector<int> ar, string msg)
 {
     cout << msg << "\n";
@@ -147,14 +147,14 @@ int main()
     vector<int> prevSml = prevSmall(arr);
     vector<int> nextSml = nextSmall(arr);
 
-    // print indices
+    // Print indices
     cout << "\n";
     printIndex(prevGrt, "Index of previous greater element:");
     printIndex(nextGrt, "Index of next greater element:");
     printIndex(prevSml, "Index of previous smaller element:");
     printIndex(nextSml, "Index of next smaller element:");
 
-    // print values
+    // Print values
     cout << "\nValue of previous greater element:\n";
     for (auto &it : prevGrt)
     {

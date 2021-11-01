@@ -1,9 +1,13 @@
-// https://leetcode.com/problems/largest-rectangle-in-histogram/
+/*
+    Maximum area of histogram
+    https://leetcode.com/problems/largest-rectangle-in-histogram/
+*/
+
 
 #include <bits/stdc++.h>
 using namespace std;
 
-// =============== max area of histogram O(n^2) ================= //
+// =============== Max area of histogram O(n^2) ================= //
 int getMaxArea(int arr[], int n)
 {
     // to store maximum area
@@ -44,8 +48,8 @@ int getMaxArea(int arr[], int n)
     return maxim;
 }
 
-// ================ max area of histogram O(n) =================== //
-// previous smaller element
+// ================ Max area of histogram O(n) =================== //
+// Previous smaller element
 vector<int> prevSmall(vector<int> arr)
 {
     // init stack and vector
@@ -74,7 +78,7 @@ vector<int> prevSmall(vector<int> arr)
     return ans;
 }
 
-// next smaller element
+// Next smaller element
 vector<int> nextSmall(vector<int> arr)
 {
     // init stack and vector

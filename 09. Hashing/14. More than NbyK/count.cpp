@@ -1,7 +1,12 @@
+/*
+    Print elements with more than n/k occurance
+    eg: [10,10,20,30,20,10,10], 2 => 10
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// print elements with more than n/k occurance. Time: O(n), Space: O(n)
+// Time: O(n), Space: O(n)
 void printNbyK(int arr[], int n, int k)
 {
     unordered_map<int, int> counter;

@@ -1,7 +1,12 @@
+/*
+    Group anagrams together
+    https://leetcode.com/problems/group-anagrams/
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// Group anagrams together
+// Group anagrams
 vector<vector<string>> Anagrams(vector<string> &strs)
 {
     // anwser vector
@@ -39,10 +44,10 @@ int main()
     // Given string
     vector<string> words = {"act", "god", "cat", "dog", "tac"};
 
-    // store ans
+    // Store ans
     vector<vector<string>> ans = Anagrams(words);
 
-    // print answer
+    // Print answer
     for (int i = 0; i < ans.size(); i++)
     {
         for (int j = 0; j < ans[i].size(); j++)

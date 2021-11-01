@@ -1,8 +1,11 @@
-// Construct longest proper-prefix and suffix array
+/*
+    Construct longest proper-prefix and suffix array
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// build LPS array
+// Build LPS array
 void fillLPS(string str, int *LPS)
 {
     // init size
@@ -44,13 +47,13 @@ int main()
     // Given string
     string str = "abacabad"; // 0 0 1 0 1 2 3 0
 
-    // lps array
+    // LPS array
     int LPS[str.size()];
 
     // fn call
     fillLPS(str, LPS);
 
-    // output LPS
+    // Output LPS
     for (auto &x : LPS)
         cout << x << " ";
 }
@@ -86,7 +89,7 @@ int main()
 
     "ababc"                                     {0, 0, 1, 2, 0}
         pf: "" "a" "ab" "aba" "abab"
-        sf: "" "c" "bc" "abc" "babc" "ababc"   
+        sf: "" "c" "bc" "abc" "babc" "ababc"
 
     ============ key points =============
 

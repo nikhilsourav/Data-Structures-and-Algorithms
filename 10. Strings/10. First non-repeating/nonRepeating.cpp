@@ -1,3 +1,8 @@
+/*
+    Find index of first non-repeating character in a string
+    eg: str = "abbcbda" => first non-repeating char = 'c', index = 3
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

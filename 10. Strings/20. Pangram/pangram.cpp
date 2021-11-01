@@ -1,4 +1,9 @@
-#include <iostream>
+/*
+    Check whether given string is pangram (containing all characters of english alphabet)
+    eg: str = "The quick brown fox jumps over the lazy dog" => true
+*/
+
+#include <bits/stdc++.h>
 using namespace std;
 
 const int CHAR = 256;
@@ -6,7 +11,7 @@ const int CHAR = 256;
 // pangram without using set
 bool checkPangram(string &str)
 {
-    //initialize an array of 256 chars with all elements as 0
+    // initialize an array of 256 chars with all elements as 0
     int mark[CHAR] = {};
 
     // init index and size

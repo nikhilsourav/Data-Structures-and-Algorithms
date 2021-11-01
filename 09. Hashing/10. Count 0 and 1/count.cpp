@@ -1,7 +1,12 @@
+/*
+    Find the number of subarrays having equal number of 0s and 1s
+    eg: [1,0,1,1,0,0] => [1,0], [1,1,0,0] => 2
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// count subarray with sum = k
+// Count subarray with sum = k
 int subarraySumEqualK(vector<int> arr, int k)
 {
     // init map:
@@ -27,7 +32,7 @@ int subarraySumEqualK(vector<int> arr, int k)
     return count;
 }
 
-// Find the number of subarrays having equal number of 0s and 1s.
+// Find subarrays having equal 0s and 1s.
 long long countSubarrWithEqualZeroAndOne(int arr[], int n)
 {
     // replace all 0 with -1 in given array

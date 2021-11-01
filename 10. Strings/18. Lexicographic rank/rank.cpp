@@ -1,3 +1,15 @@
+/*
+    Find lexicographic rank of a string
+    eg: str = "BAC" => rank = 3
+
+    "ABC"
+    "ACB"
+    "BAC" (answer)
+    "BCA"
+    "CAB"
+    "CBA"
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -9,7 +21,7 @@ int fact(int n)
     return (n <= 1) ? 1 : n * fact(n - 1);
 }
 
-// find lexicographic rank of s string
+// Find rank
 int lexicographicRank(string &str)
 {
     // init result

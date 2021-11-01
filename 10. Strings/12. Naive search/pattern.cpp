@@ -1,7 +1,11 @@
+/*
+    Naive pattern searching
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// Naive pattern search Time: O((n-m+1)*m)
+// Time: O((n-m+1)*m)
 void findPattern(string &str, string &pattern)
 {
     // init size

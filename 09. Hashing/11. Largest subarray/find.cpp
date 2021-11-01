@@ -1,7 +1,12 @@
+/*
+    Find length of largest subarray with given sum
+    eg: [8,3,1,5,-6,6,2,2], 4 => [-6,6,2,2] => 4 (length)
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// find largest subarray with given sum
+// Find largest subarray with given sum
 int largestSubarrayWithSumX(int arr[], int n, int sum)
 {
     // init map

@@ -1,7 +1,12 @@
+/*
+    Find largest number of n digits with given sum
+    eg: sum = 12, n = 3 => 930
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// Find largest number with given sum
+// Find largest number
 string largestNumber(int n, int sum)
 {
     // init string

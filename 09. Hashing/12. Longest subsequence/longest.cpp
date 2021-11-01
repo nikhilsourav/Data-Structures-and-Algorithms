@@ -1,7 +1,12 @@
+/*
+    Find length of longest consecutive subsequence
+    eg [1,9,3,4,2,10,13] => [3,4,10,13] => 4
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// find lenght of longest consecutive subsequence
+// Find length of longest consecutive subsequence
 int findLongest(int arr[], int n)
 {
     // init set

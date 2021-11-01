@@ -1,7 +1,12 @@
+/*
+    Print distinct elements in each window of size k
+    eg: [10,20,20,10,30,40,10], 4 => 2 3 4 3
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// print distinct elements in each window of size k
+// Print
 void printDistinct(int arr[], int n, int k)
 {
     // initialize map
@@ -32,7 +37,7 @@ void printDistinct(int arr[], int n, int k)
     }
 }
 
-// Driver dcode
+// Driver code
 int main()
 {
     // Given array

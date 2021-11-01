@@ -1,9 +1,14 @@
+/*
+    Check if pattern or it's permutation is present in given text
+    eg: text = "geeksforgeeks", pattern = "frog" => true
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
 const int CHAR = 256;
 
-// check if two array are equal
+// Check if two array are equal
 bool areSame(int countTxt[], int countPat[])
 {
     for (int i = 0; i < CHAR; i++)
@@ -13,9 +18,10 @@ bool areSame(int countTxt[], int countPat[])
     return true;
 }
 
-// check if pat or it's permutation i present in txt Time: O(n*CHAR)
+// Time: O(n*CHAR)
 bool isPresent(string &txt, string &pat)
 {
+    // init vars
     int countTxt[CHAR] = {0}, countPat[CHAR] = {0};
 
     // count frequency of each char in txt and pat upto pat.size()
@@ -45,7 +51,7 @@ bool isPresent(string &txt, string &pat)
 int main()
 {
     // Given string
-    string txt = "geeksforgeeks", pat = "frog";
+    string txt = "geeksforgeeks", pat = "gofr";
 
     // fn call
     cout << boolalpha << isPresent(txt, pat);

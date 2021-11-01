@@ -1,9 +1,7 @@
 /*
-    Given a patterntern with distinct characters and a text, 
-    we need to print all occurrences of the patterntern in the text. 
-    This video talks about improved Naive pattern searching with 
-    Theta(n) time complexity
+    Improved Naive pattern searching 
 */
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -24,7 +22,7 @@ void findPattern(string &str, string &pattern)
             if (str[low + high] != pattern[high])
                 break;
 
-        // if high crossed patternSize
+        // if high crossed pattern size
         if (high == patternSize)
             cout << "Found at index " << low << "\n";
 

@@ -1,7 +1,11 @@
+/*
+    Find length of longest subarray with distinct characters
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// longest subarray with all distinct characters
+// Longest subarray
 int longestDistinct(string str)
 {
     // init size and res

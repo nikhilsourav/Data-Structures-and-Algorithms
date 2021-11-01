@@ -4,18 +4,19 @@
     a vote casted to the candidate. Print the name of candidate that
     received Max votes. If there is tie, print lexicographically smaller name.
 */
+
 #include "bits/stdc++.h"
 using namespace std;
 
-// find winner
+// Find winner
 vector<string> findWinner(vector<string> &votes)
 {
-    // Insert all votes in a map
+    // insert all votes in a map
     map<string, int> counter;
     for (auto &str : votes)
         counter[str]++;
 
-    // Traverse through map to find the candidate with maximum votes.
+    // traverse through map to find the candidate with maximum votes.
     int maxValueInMap = 0;
     string winner;
     for (auto &entry : counter)
@@ -50,6 +51,6 @@ int main()
     // fn call
     vector<string> answer = findWinner(votes);
 
-    // output
+    // Output
     cout << answer[0] << " won by " << answer[1] << " total votes";
 }

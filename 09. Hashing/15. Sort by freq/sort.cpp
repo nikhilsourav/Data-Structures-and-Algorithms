@@ -1,7 +1,12 @@
+/*
+    Sort an array by frequence of each element (higher freq element first)
+    eg: [1,2,2,3,3,3,4,4,4,4] => [4,4,4,4,3,3,3,2,2,1]
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// sort array by frequency
+// Sort array by frequency
 vector<int> sortByFreq(int arr[], int n)
 {
     // create map

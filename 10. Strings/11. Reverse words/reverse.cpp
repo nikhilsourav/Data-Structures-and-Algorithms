@@ -1,7 +1,12 @@
+/*
+    Reverse given sentence
+    eg: hi there => there hi
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// reverse given word using vector
+// Reverse given word using vector
 string reverseWord(string str)
 {
     // init string stream
@@ -27,7 +32,7 @@ string reverseWord(string str)
 }
 
 /*
-    in-place reverse (reverse each word separated by space then reverse whole string)
+    In-place reverse (reverse each word separated by space then reverse whole string)
     (abc def ghi) =>(cba fed ihg) => (ghi def abc)
 */
 string reverseWords(string str)
