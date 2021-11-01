@@ -1,10 +1,12 @@
-// CPP program to Minimize the absolute difference of sum of two subsets
-// https://www.geeksforgeeks.org/minimize-absolute-difference-sum-two-subsets/
+/*
+    Minimize the absolute difference of sum of two subsets
+    https://www.geeksforgeeks.org/minimize-absolute-difference-sum-two-subsets/
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
 
-// function to print difference
+// Minimize absolute diff
 void subsetDifference(int n)
 {
     // summation of n elements

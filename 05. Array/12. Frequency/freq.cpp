@@ -1,7 +1,16 @@
+/*
+    Count frequency of each element in sorted array
+    eg: [10, 11, 11, 13]
+    => freq 10 = 1
+    => freq 11 = 2
+    => freq 13 = 1
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// count frequency in sorted array
+// Calculate frequency of each element
 void printFrequency(int *arr, int size)
 {
     // init var:

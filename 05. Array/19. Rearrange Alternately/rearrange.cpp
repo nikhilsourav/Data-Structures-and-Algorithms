@@ -34,7 +34,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// modify and return maxElement Time: O(n), Space: O(1) constraints
+// Modify and return maxElement Time: O(n), Space: O(1) constraints
 void modify(int *arr, int size)
 {
     // find maxElement + 1 (in this case it is arr[size-1] + 1, since given array is sorted)
@@ -89,7 +89,7 @@ int main()
     // fn call
     modify(arr, size);
 
-    // output
+    // Output
     for (int i = 0; i < size; i++)
         cout << arr[i] << " ";
 }

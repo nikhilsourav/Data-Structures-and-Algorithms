@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Hoare's partition
+// Hoare partition for quicksort
 int hoarePartition(int arr[], int low, int high)
 {
     // init vars
@@ -42,7 +42,7 @@ int main()
     // fn call
     hoarePartition(arr, 0, n - 1);
 
-    // output
+    // Output
     for (int x : arr)
         cout << x << " ";
 }

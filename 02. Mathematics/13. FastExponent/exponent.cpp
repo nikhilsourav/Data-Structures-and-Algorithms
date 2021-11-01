@@ -1,11 +1,17 @@
+/*
+    Fast exponent used in competitive programming
+*/
+
 #include <iostream>
 using namespace std;
 
 #define LL long long
 const LL MOD = 1000000007;
 
-// remember: (x + y) % mod = (x % mod + y % mod) % mod
-// O(log (y))
+/*
+ Remember: (x + y) % mod = (x % mod + y % mod) % mod
+ Time complexity O(log (y))
+*/
 LL fastModuloExponent(LL x, LL y, LL MOD)
 {
     // init result
@@ -32,13 +38,17 @@ LL fastModuloExponent(LL x, LL y, LL MOD)
 // Driver code
 int main()
 {
-    cout << fastModuloExponent(3, 5, MOD);
+    // Given numbers
+    int base = 3, expo = 5;
+
+    // fn call
+    cout << fastModuloExponent(base, expo, MOD);
 }
 
 /*
-    * Calculate 3 ^ 5
+    eg: Calculate 3 ^ 5
     * initialize result = 1
     * Convert 5 to binary = 1 0 1
-    * multiply each bit to successive square of 3 
+    * multiply each bit to successive square of 3
     * {(3^2^2 * 1)} * { (3^2 * 0)_skippded_ } * {(3^1 * 1)} = 243
 */

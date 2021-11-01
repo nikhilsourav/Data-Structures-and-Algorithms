@@ -4,7 +4,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// find first sum pair in O(n) time
+// Find first sum pair in O(n) time
 pair<int, int> findPair(int arr[], int size, int sum)
 {
     // low and high vars for two pointer

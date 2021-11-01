@@ -1,7 +1,16 @@
+/*
+    Given stock prices for upcoming days. You can buy a stock in any day and
+    sell the stock in any upcoming day. Maximize the profit.
+    eg: [1,5,3,1,2,8]
+    => buy on 1 sell on 5, profit = 4
+    => buy on 1 sell on 8, profit = 7 {(2-1) + (8-2)}
+    => total profit = 11
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// maximize profit
+// Time Complexity: O(n)
 int maxProfit(int *arr, int size)
 {
     // init vars:

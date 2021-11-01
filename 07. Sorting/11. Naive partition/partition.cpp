@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Naive partition (retains stability)
+// Naive partition for quicksort (retains stability)
 void partition(int arr[], int low, int high, int pivot)
 {
     // init vars

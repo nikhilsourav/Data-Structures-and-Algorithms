@@ -1,8 +1,9 @@
 /*
-    Given a binary array, we need to find the 
-    minimum of number of group flips to make all array elements same.
-    In a group flip, we can flip any set of consecutive 1s or 0s.
+    Given a binary array, we need to find the minimum of number of 
+    group flips to make all array elements same. In a group flip,
+    we can flip any set of consecutive 1s or 0s.
 */
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -29,7 +30,6 @@ void printGroups(int arr[], int size)
 // Driver code
 int main()
 {
-
     // Given array
     int arr[] = {0, 0, 1, 1, 0, 0, 1, 1, 0};
     int size = sizeof(arr) / sizeof(arr[0]);

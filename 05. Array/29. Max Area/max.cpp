@@ -1,8 +1,12 @@
-// https://leetcode.com/problems/container-with-most-water/
+/*
+    Container with most water
+    https://leetcode.com/problems/container-with-most-water/
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// find max area of water
+// Find max area of water
 int maxArea(vector<int> &height)
 {
     // init vars:

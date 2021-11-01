@@ -7,7 +7,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// sliding window of fixed size
+// Sliding window of fixed size
 int maxSum(int arr[], int size, int k)
 {
     // initialize variables

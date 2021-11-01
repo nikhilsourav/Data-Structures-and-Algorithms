@@ -1,10 +1,8 @@
 /*
     Subarrays are arrays within another array.
     Subarrays contains contiguous elements whereas subsequences are not.
-    Substrings are similar to subarray but for strings
-*/
+    Substrings are similar to subarray but for strings.
 
-/*
     A subbarray is a contiguous part of array.
     An array that is inside another array. 
     For example, consider the array [1, 2, 3, 4], 
@@ -16,7 +14,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// print all non-empty subarray
+// Print all non-empty subarray
 void print(int arr[], int n)
 {
     for (int i = 0; i < n; i++)

@@ -1,5 +1,6 @@
-/*  
-    Given an array of int where all no. appear even number of times except one no. find it
+/*
+    Given an array of int where all no. appear even number of times except one no. Find this number.
+
     Properties of XOR:
     x^x = 0
     x^0 = x

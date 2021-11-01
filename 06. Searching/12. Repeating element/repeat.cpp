@@ -2,10 +2,11 @@
     Every element appear exactly ones except one element.
     This one element may repeat any number of times
 */
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// find duplicate number
+// Find duplicate number
 int repeating(int arr[], int size)
 {
     // phase 1
@@ -28,7 +29,7 @@ int repeating(int arr[], int size)
     return slow;
 }
 
-// find only repeating element and its freq in sorted array
+// Find only repeating element and its freq in sorted array
 pair<int, int> findRepeatingElement(int arr[], int n)
 {
     // corner case

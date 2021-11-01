@@ -1,3 +1,8 @@
+/*
+    Calculate longest even odd sequence.
+    eg: [11,22,33,44,24] => 4 (11,22,33,44)
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -8,8 +13,8 @@ int maxEvenOdd(int arr[], int size)
     int res = 1;
     int currentLength = 1;
 
-    // loigc:
-    for (int i = 0; i < size; i++)
+    // logic:
+    for (int i = 1; i < size; i++)
     {
         if ((arr[i] % 2 == 0 && arr[i - 1] % 2 != 0) || (arr[i] % 2 != 0 && arr[i - 1] % 2 == 0))
         {

@@ -40,6 +40,7 @@ void findSubarray(int arr[], int n, int givenSum)
     }
 }
 
+// Driver code
 int main()
 {
     // Given array

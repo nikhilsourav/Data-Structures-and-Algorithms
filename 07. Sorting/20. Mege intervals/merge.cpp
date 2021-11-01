@@ -1,7 +1,12 @@
+/*
+    Merge intervals
+    https://leetcode.com/problems/merge-intervals/
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// utility function
+// Utility function
 void output(vector<vector<int>> arr)
 {
     // output vector
@@ -13,7 +18,7 @@ void output(vector<vector<int>> arr)
     }
 }
 
-// merge intervals
+// Merge intervals
 vector<vector<int>> mergeIntervals(vector<vector<int>> &intervals)
 {
     // edge case
@@ -49,6 +54,6 @@ int main()
     // fn call
     vector<vector<int>> answer = mergeIntervals(intervals);
 
-    // output
+    // Output
     output(answer);
 }

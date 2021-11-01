@@ -1,7 +1,12 @@
+/*
+    Find median in two sorted array
+    https://bit.ly/3BCjuR0
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// find median in two sorted array O(log min(n1,n2))
+// Find median in two sorted array O(log min(n1,n2))
 float median(int arr1[], int arr2[], int size1, int size2)
 {
     // swap length if siz1 > size2

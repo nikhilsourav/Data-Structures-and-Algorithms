@@ -1,7 +1,12 @@
+/*
+    Chocolate distribution problem
+    https://practice.geeksforgeeks.org/problems/chocolate-distribution-problem3825/1
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// find min of difference betwen min and max in m elements
+// Find min of difference betwen min and max in m elements
 int minDiff(int arr[], int n, int m)
 {
     // base case
@@ -17,7 +22,7 @@ int minDiff(int arr[], int n, int m)
     // logic:
     for (int i = 0; (i + m - 1) < n; i++)
         res = min(res, arr[i + m - 1] - arr[i]);
-    
+
     // answer
     return res;
 }

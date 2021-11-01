@@ -1,8 +1,6 @@
 /*
     Given an numsay of integers nums.
-
     A pair (i,j) is called good if nums[i] == nums[j] and i < j.
-
     Return the number of good pairs.
 */
 
@@ -15,7 +13,7 @@ using namespace std;
     good pairs can be made with this number.
 */
 
-// Time complexity: O(n)
+// Time: O(n)
 int countGoodPair(vector<int> &nums)
 {
     // create a vector of size maxElement + 1 and init with all 0

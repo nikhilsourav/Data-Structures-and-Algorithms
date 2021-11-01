@@ -1,4 +1,10 @@
-// https://www.youtube.com/watch?v=uCsD3ZGzMgE Numberphile
+/*
+    Numberphile: https://www.youtube.com/watch?v=uCsD3ZGzMgE
+
+    There are n people standing in a circle. Find the position of the survivor 
+    after repeatedly killing kth person in a circular manner.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

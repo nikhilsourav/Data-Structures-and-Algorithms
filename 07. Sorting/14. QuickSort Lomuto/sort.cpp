@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Lumato partition
+// Quicksort using lomuto partition
 int lomutoPartition(int arr[], int low, int high)
 {
     // init vars

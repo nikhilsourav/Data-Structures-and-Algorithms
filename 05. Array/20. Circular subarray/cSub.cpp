@@ -1,7 +1,6 @@
 /*
     The task is to find maximum circular sum subarray of a given array.
-
-    arr[] = {10, 5, -5}
+    eg: [10, 5, -5]
 
     All normal subarrays: {10} {5} {-5} {10,5} {5,-5} {10,5,-5}
     Only circular subarrays: {5,-5,10} {-5,10} {-5,5,10}
@@ -10,7 +9,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// ======= Brute Force O(n^2) ===========
+// Brute Force Time: O(n^2)
 int maxCircularSum(int arr[], int size)
 {
     // init result
@@ -38,7 +37,7 @@ int maxCircularSum(int arr[], int size)
     return res;
 }
 
-// O(n) max in normal subarray using kadane's algo
+// Max in normal subarray using kadane's algo Time: O(n)
 int maxNormalSubarray(int arr[], int n)
 {
     // init vars
@@ -55,7 +54,7 @@ int maxNormalSubarray(int arr[], int n)
     return res;
 }
 
-// min in normal subarray using modified kadane's algo
+// Min in normal subarray using modified kadane's algo
 int minNormalSubarray(int arr[], int n)
 {
     // init vars
@@ -75,7 +74,7 @@ int minNormalSubarray(int arr[], int n)
     return res;
 }
 
-// overall max b/w these two
+// Overall max between these two
 int efficientMaxCircularSum(int arr[], int n)
 {
     // find max sum in normal subarray (kadane's algorithm)

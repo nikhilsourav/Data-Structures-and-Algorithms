@@ -5,10 +5,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// check whether number is prime
+// Check whether number is prime
 bool isPrime(int number)
 {
-    // logic
+    // logic:
     for (int i = 2; i * i <= number; i++)
         if (number % i == 0)
             return false;
@@ -17,7 +17,7 @@ bool isPrime(int number)
     return true;
 }
 
-// check wheter number has exactly 3 divisors
+// Check wheter number has exactly 3 divisors
 int exactly3Divisors(int number)
 {
     // init vars:
@@ -41,5 +41,7 @@ int main()
 {
     // Given number
     int num = 8219;
+
+    // fn call
     cout << exactly3Divisors(num);
 }

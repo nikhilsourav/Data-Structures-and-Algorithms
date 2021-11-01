@@ -1,9 +1,12 @@
-// https://www.youtube.com/watch?v=LjN2T7pg7WQ
+/*
+    Check whether array is sorted and rotated
+    https://www.youtube.com/watch?v=LjN2T7pg7WQ
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
 
-// check if array is increasing in range low to high
+// Check if array is increasing in range low to high
 bool isIncreasing(int arr[], int low, int high)
 {
     for (int i = low; i <= high - 1; i++)
@@ -12,7 +15,7 @@ bool isIncreasing(int arr[], int low, int high)
     return true;
 }
 
-// check if array is decreasing in range low to high
+// Check if array is decreasing in range low to high
 bool isDecreasing(int arr[], int low, int high)
 {
     for (int i = low; i <= high - 1; i++)
@@ -21,7 +24,7 @@ bool isDecreasing(int arr[], int low, int high)
     return true;
 }
 
-// check if array is increasing and rotated from minIndex to maxIndex
+// Check if array is increasing and rotated from minIndex to maxIndex
 bool incAndRotated(int arr[], int n, int minIndex, int maxIndex)
 {
     // if array is strictly increasing
@@ -32,7 +35,7 @@ bool incAndRotated(int arr[], int n, int minIndex, int maxIndex)
     return isIncreasing(arr, 0, maxIndex) && isIncreasing(arr, minIndex, n - 1);
 }
 
-// check if array is decreasing and rotated from minIndex to maxIndex
+// Check if array is decreasing and rotated from minIndex to maxIndex
 bool decAndRotated(int arr[], int n, int minIndex, int maxIndex)
 {
     // if array is strictly decreasing
@@ -43,7 +46,7 @@ bool decAndRotated(int arr[], int n, int minIndex, int maxIndex)
     return isDecreasing(arr, 0, minIndex) && isDecreasing(arr, maxIndex, n - 1);
 }
 
-// fn to check if array is sorted and rotated
+// Function to check if array is sorted and rotated
 bool checkRotatedAndSorted(int arr[], int n)
 {
     // store index of Min and Max

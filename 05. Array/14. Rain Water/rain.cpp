@@ -1,7 +1,16 @@
+/*
+    Given an array of non-negative integers where each value represents height of
+    each building. Find total amount of water that can be collected between the
+    buildings. Notice that the leftmost and rightmost building can't hold any
+    amount of water.
+    eg: [8,8,2,4,5,5,1]
+    => between 8 and 5 = {(5-2) + (5-4)} = 4
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// calculate max unit of water that can be collected. Time: O(n^2) Space: O(1)
+// Time: O(n^2) Space: O(1)
 int trappedWater(int *arr, int size)
 {
     // init vars:

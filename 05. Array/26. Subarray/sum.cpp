@@ -5,7 +5,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// sliding window technique
+// Sliding window technique
 bool isSubSum(int arr[], int size, int sum)
 {
     // init vars

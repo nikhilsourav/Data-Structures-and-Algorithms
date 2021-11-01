@@ -1,13 +1,17 @@
+/*
+    Print sum of all subsets of an array
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// Prints sums of all subsets of array
+// Function to print sum of all subsets of an array
 int subsetSums(int arr[], int n)
 {
-    // There are totoal 2^n subsets
+    // there are total 2^n subsets
     long long size = 1 << n;
 
-    // Consider all numbers from 0 to 2^n - 1
+    // consider all numbers from 0 to 2^n - 1
     long long sum = 0;
     for (long long i = 0; i < size; i++)
     {

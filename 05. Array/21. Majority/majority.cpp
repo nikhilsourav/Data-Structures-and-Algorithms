@@ -1,11 +1,12 @@
 /*
-    Majority element is an element that appears more than n/2 times 
-    in an array of size n. return any index
+    Majority element is an element that appears more than n/2 times
+    in an array of size n. return any index.
+    eg: [6, 8, 4, 8, 8] => 8
 */
 #include <bits/stdc++.h>
 using namespace std;
 
-// O(n)
+// Time: O(n)
 int majority(int arr[], int size)
 {
     // check all elements if they occur more than n/2
@@ -28,7 +29,7 @@ int majority(int arr[], int size)
     return -1;
 }
 
-// O(n) Moore’s Voting Algorithm (might not give first index of occuring)
+// Moore’s Voting Algorithm (might not give first index of occuring) Time: O(n)
 int efficientMajority(int arr[], int n)
 {
     // find a candidate

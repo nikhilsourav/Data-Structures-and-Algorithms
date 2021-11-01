@@ -1,7 +1,12 @@
+/*
+    Given an array of integers. Find the minimum absolute difference in this array.
+    eg [5,3,2] => kabs(3-5) = 2
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// find min difference of a pair in array
+// Find min difference of a pair in array
 int getMinDiff(int arr[], int n)
 {
     // sort

@@ -1,7 +1,12 @@
+/*
+    Find maximum sub-array sum.
+    eg: [1,-2,3, 0] => 3 {(3) or (3+0)}
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-//  Kadane's algorithm O(n)
+//  Kadane's algorithm Time: O(n)
 int maxSumEfficiently(int arr[], int size)
 {
     // init vars:

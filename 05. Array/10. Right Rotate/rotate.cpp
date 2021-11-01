@@ -1,9 +1,14 @@
-// https://laasyasettyblog.hashnode.dev/juggling-algorithm-for-array-rotation
+/*
+    Right rotate array by k units
+    eg: [1,2,3,4,5] => [4,5,1,2,3] (rotate right by 2 unit)
+
+    https://laasyasettyblog.hashnode.dev/juggling-algorithm-for-array-rotation
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
 
-// find GCD of size and k
+// Find GCD of size and k
 int getGcd(int a, int b)
 {
     // base case
@@ -14,7 +19,7 @@ int getGcd(int a, int b)
     return getGcd(b, a % b);
 }
 
-// left rotate by k = right rotate by size - k
+// Left rotate by k = right rotate by size - k
 void leftRotate(int arr[], int size, int k)
 {
     // if k > size
@@ -55,7 +60,7 @@ void leftRotate(int arr[], int size, int k)
     }
 }
 
-// utility fn
+// Utility fn
 void print(int *arr, int size)
 {
     for (int i = 0; i < size; i++)
@@ -73,6 +78,6 @@ int main()
     // fn call
     leftRotate(arr, size, k);
 
-    // print
+    // Output
     print(arr, size);
 }

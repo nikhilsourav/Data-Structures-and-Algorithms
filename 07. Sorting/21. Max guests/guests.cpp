@@ -1,7 +1,23 @@
+/*
+    You are given arrival and departure times of the guests, you need
+    to find the time to go to the party so that you can meet maximum people.
+    eg: arrival = [900, 600, 700], departure = [1000, 800, 730]
+
+    Time   Arr/Dep    count of guest
+    6:00    Arrival    1
+    7:00    Arrival    2  (Answer)
+    7:30    Depart     1
+    8:00    Depart     0
+    9:00    Arrival    1
+    10:00   Depart     0
+
+    When we arrive at 7:00 we have 2 guests which is the max we can meet.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// find max number of guests you can meet
+// Find max number of guests you can meet
 int maxGuest(int arrival[], int departure[], int n)
 {
     // sort given function
@@ -46,13 +62,3 @@ int main()
     // fn call
     cout << maxGuest(arrival, departure, n);
 }
-
-/*
-    Time   Arr/Dep    count of guest
-    6:00    Arrival    1
-    7:00    Arrival    2            (Answer)
-    7:30    Depart     1
-    8:00    Depart     0
-    9:00    Arrival    1
-    10:00   Depart     0
-*/

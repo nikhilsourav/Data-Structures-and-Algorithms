@@ -1,9 +1,14 @@
+/*
+    Calculate base to the power exponent
+    eg: base = 2, expo = 3 then power = 2^3 = 8
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-/* 
+/*
     power (x,n) can be written as :
-        
+
     power(x,n/2) * power(x,n/2) // if n is even
 
     power(x,n-1)*x // if n is odd
@@ -30,6 +35,9 @@ int power(int x, int n)
 // Driver code
 int main()
 {
+    // Given numbers
+    int base = 3, expo = 2;
+
     // fn call
-    cout << power(3, 2);
+    cout << power(base, expo);
 }

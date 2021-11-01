@@ -1,7 +1,12 @@
+/*
+    Count inversions
+    https://practice.geeksforgeeks.org/problems/inversion-of-array-1587115620/1
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// modified merge logic
+// Modified merge logic
 int countAndMerge(int arr[], int low, int mid, int high)
 {
     // initialize variables
@@ -37,7 +42,7 @@ int countAndMerge(int arr[], int low, int mid, int high)
     return res;
 }
 
-// recursive count inversion function
+// Recursive count inversion function
 int countInv(int arr[], int low, int high)
 {
     // res to store inv count
@@ -63,6 +68,6 @@ int main()
     int arr[] = {2, 4, 1, 3, 5};
     int n = sizeof(arr) / sizeof(arr[0]);
 
-    // fn caint
+    // fn call
     cout << countInv(arr, 0, n - 1);
 }

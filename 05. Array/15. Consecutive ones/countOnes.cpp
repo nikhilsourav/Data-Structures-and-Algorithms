@@ -1,7 +1,12 @@
+/*
+    Find longest consecutive ones
+    eg: [1,1,1,0,0,1,1,0,1] => 3
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// count longest consecutive ones
+// Time: O(n)
 int countOnes(int arr[], int size)
 {
     // init vars

@@ -1,7 +1,12 @@
+/*
+    Find the maximum of arr[j] - arr[i] where j>i.
+    eg: [2, 3, 10, 6, 4, 8, 1], maxDiff = 10 - 2 = 6
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-//  Find the maximum of arr[j] - arr[i] where j>i.
+//  Modified Kadane's algorithm
 int maxDiff(int arr[], int size)
 {
     // init vars:
