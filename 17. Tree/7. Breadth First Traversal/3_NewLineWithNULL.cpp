@@ -58,26 +58,26 @@ void levelOrderTraversal(Node *root)
     if (root != NULL)
     {
         // queue of type Node *
-        queue<Node *> container;
+        queue<Node *> qu;
 
         // push root and NULL
-        container.push(root);
-        container.push(NULL);
+        qu.push(root);
+        qu.push(NULL);
 
         // level order traversal
-        while (container.size() != 1)
+        while (qu.size() != 1)
         {
             // take out current node
-            Node *curr = container.front();
+            Node *curr = qu.front();
 
             // delete from queue
-            container.pop();
+            qu.pop();
 
             // if current node is null
             if (curr == NULL)
             {
                 cout << "\n";
-                container.push(NULL);
+                qu.push(NULL);
                 continue;
             }
 
@@ -89,9 +89,9 @@ void levelOrderTraversal(Node *root)
 
             // push children
             if (curr->left != NULL)
-                container.push(curr->left);
+                qu.push(curr->left);
             if (curr->right != NULL)
-                container.push(curr->right);
+                qu.push(curr->right);
         }
     }
 }

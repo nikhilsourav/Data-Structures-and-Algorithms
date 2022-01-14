@@ -46,32 +46,32 @@ void levelOrderTraversal(Node *root)
     if (root != NULL)
     {
         // init queue with root
-        queue<Node *> container;
-        container.push(root);
+        queue<Node *> qu;
+        qu.push(root);
 
         // logic:
-        while (!container.empty())
+        while (!qu.empty())
         {
             // get current level size
-            int size = container.size();
+            int size = qu.size();
 
             // print all node in current level
             for (int i = 0; i < size; i++)
             {
                 // take out first element of queue
-                Node *curr = container.front();
+                Node *curr = qu.front();
 
                 // delete it from queue
-                container.pop();
+                qu.pop();
 
                 // print it
                 cout << curr->key << " ";
 
                 // push children if possible
                 if (curr->left != NULL)
-                    container.push(curr->left);
+                    qu.push(curr->left);
                 if (curr->right != NULL)
-                    container.push(curr->right);
+                    qu.push(curr->right);
             }
 
             // new line after current level

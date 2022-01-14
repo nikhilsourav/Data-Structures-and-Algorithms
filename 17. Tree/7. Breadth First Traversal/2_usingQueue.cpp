@@ -46,26 +46,26 @@ void levelOrderTraversal(Node *root)
     if (root != NULL)
     {
         // initialize queue with root
-        queue<Node *> container;
-        container.push(root);
+        queue<Node *> qu;
+        qu.push(root);
 
         // logic
-        while (!container.empty())
+        while (!qu.empty())
         {
             // take out a node
-            Node *curr = container.front();
+            Node *curr = qu.front();
 
             // print it
             cout << curr->key << " ";
 
             // delete from queue
-            container.pop();
+            qu.pop();
 
             // push children if possible
             if (curr->left != NULL)
-                container.push(curr->left);
+                qu.push(curr->left);
             if (curr->right != NULL)
-                container.push(curr->right);
+                qu.push(curr->right);
         }
     }
 }
