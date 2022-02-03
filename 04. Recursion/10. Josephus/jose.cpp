@@ -8,7 +8,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// return survivor O(n)
+// Return survivor O(n)
 int josephus(int n, int k)
 {
     // base case

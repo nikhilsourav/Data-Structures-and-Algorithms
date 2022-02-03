@@ -6,7 +6,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// sum using recursion
+// Sum using recursion
 int getSum(int n)
 {
     // base case
