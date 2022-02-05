@@ -1,7 +1,13 @@
 /*
     // https://bit.ly/3qHNdnQ
 
-    Incomplete
+    Given a doubly linked list insert a node at given position
+    The item's index should be the given index (pos) after insertion
+
+    list [1<=>2<=>3]
+    item: 70, pos = 1 (0-based index)
+
+    output: [1<=>70<=>2<=>3]
 */
 
 #include <bits/stdc++.h>
@@ -25,33 +31,44 @@ public:
 // insert
 Node *insertPos(Node *head, int val, int pos)
 {
-    // allocate memory to new node
     Node *newNode = new Node(val);
 
-    // if list is empty and pos == 1, simply return new node
-    if (pos == 1 && head == NULL || head == NULL)
-        return newNode;
+    /*
+        Case 1: If pos == 0
+            if list == empty and pos == 0
+            simply return newNode
 
-    // if list is not empty and pos == 1
-    if (pos == 1)
+            if list != empty and pos == 0
+            connect new node to head
+    */
+    if (pos == 0 and head == NULL || head == NULL)
+        return newNode;
+    if (pos == 0 and head != NULL)
     {
         newNode->next = head;
         head->prev = newNode;
         return newNode;
     }
 
-    // general case: insertion at given pos, init ptr to traverse
-    Node *ptr = head;
+    /*
+        Case 2: If pos > 0
+            Start from i = 0 and reach one node before pos node
+            Note that the loop will run from [0 to pos - 1)
 
-    // traverse and update ptr
-    for (int i = 1; i <= pos - 2 && ptr != NULL; i++)
+            if(ptr == null) return;
+            if(ptr->next == null) logic: insert at back return;
+            else Rearrange links
+    */
+    // take ptr to one node before pos
+    Node *ptr = head;
+    for (int i = 0; i < pos - 1 && ptr != NULL; i++)
         ptr = ptr->next;
 
-    // while traversing if ptr becomes NULL => pos > list.size()
+    // check
     if (ptr == NULL)
         return head;
 
-    // ptr->next == NULL after traversing => insert at back
+    // extra case: insert at back
     if (ptr->next == NULL)
     {
         ptr->next = newNode;
@@ -59,7 +76,7 @@ Node *insertPos(Node *head, int val, int pos)
         return head;
     }
 
-    // adjust links
+    // rearrange links
     newNode->next = ptr->next;
     ptr->next->prev = newNode;
     ptr->next = newNode;
