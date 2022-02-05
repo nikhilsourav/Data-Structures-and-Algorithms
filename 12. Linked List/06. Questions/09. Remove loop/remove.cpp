@@ -1,5 +1,7 @@
 /*
-    Given a sorted signly linked list, 
+    https://bit.ly/330rKzb
+
+    Given a sorted signly linked list,
     find and remove a loop if it exists
 */
 
@@ -31,13 +33,13 @@ void printList(Node *ptr)
 }
 
 // Detect and remove loop
-Node *removeLoop(Node *head)
+void removeLoop(Node *head)
 {
     // init fast and slow pointer
     Node *slow = head, *fast = head;
 
     // detect loop using floyd cycle detection
-    while (fast != NULL && fast->next != NULL)
+    while (slow != NULL and fast != NULL and fast->next != NULL)
     {
         slow = slow->next;
         fast = fast->next->next;
@@ -45,23 +47,29 @@ Node *removeLoop(Node *head)
             break;
     }
 
-    // if there is no loop
-    if (slow != fast)
-        return head;
-
-    // reset slow
-    slow = head;
-
-    // move both pointer together
-    while (slow->next != fast->next)
+    // check
+    if (slow == head)
     {
-        slow = slow->next;
-        fast = fast->next;
+        while (fast->next != slow)
+            fast = fast->next;
+        fast->next = NULL;
     }
 
-    // reset last pointer to NULL
-    fast->next = NULL;
-    return head;
+    if (slow == fast)
+    {
+        // reset slow
+        slow = head;
+
+        // move both pointer together
+        while (slow->next != fast->next)
+        {
+            slow = slow->next;
+            fast = fast->next;
+        }
+
+        // reset last pointer to NULL
+        fast->next = NULL;
+    }
 }
 
 // Driver code
@@ -75,7 +83,7 @@ int main()
     head->next->next->next->next = head->next;
 
     // Detect and remove loop
-    head = removeLoop(head);
+    removeLoop(head);
 
     // Print
     printList(head);
