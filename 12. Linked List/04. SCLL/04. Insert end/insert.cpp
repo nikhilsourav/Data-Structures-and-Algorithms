@@ -1,5 +1,5 @@
 /*
-    Insert at the beginning of a singly circular linked list
+    Insert at the end of a singly circular linked list
 */
 
 #include <bits/stdc++.h>
@@ -18,7 +18,7 @@ public:
     }
 };
 
-// Insert in the beginning O(n)
+// Insert in the end O(1)
 Node *insertEnd(Node *head, int val)
 {
     // create node
