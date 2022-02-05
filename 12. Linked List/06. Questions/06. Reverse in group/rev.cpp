@@ -35,7 +35,7 @@ Node *reverseGroups(Node *head, int k)
     // init before and after pointer
     Node *before = NULL, *after = NULL, *current = head;
 
-    // count to keep track  fo number < k
+    // count to keep track of number < k
     int i = 0;
 
     // reverse logic
