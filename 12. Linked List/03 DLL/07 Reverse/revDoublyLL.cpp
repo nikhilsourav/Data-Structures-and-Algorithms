@@ -31,19 +31,19 @@ Node *reverseList(Node *head)
         return head;
 
     // init prev to point at previous and ptr to traverse
-    Node *prev = NULL, *ptr = head;
+    Node *previous = NULL, *ptr = head;
 
     // traverse and swap
     while (ptr != NULL)
     {
-        prev = ptr->prev;
+        previous = ptr->prev;
         ptr->prev = ptr->next;
-        ptr->next = prev;
+        ptr->next = previous;
         ptr = ptr->prev;
     }
 
     // return new head pointer
-    return prev->prev;
+    return previous->prev;
 }
 
 // Print list
