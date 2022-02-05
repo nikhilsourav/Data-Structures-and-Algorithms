@@ -1,5 +1,10 @@
 /*
     Given a singly linked list, find value at nth node from end
+
+    10->20->30->40->50
+    n = 3
+
+    output: 30 
 */
 
 #include <bits/stdc++.h>
@@ -63,6 +68,7 @@ int main()
     head->next = new Node(20);
     head->next->next = new Node(30);
     head->next->next->next = new Node(40);
+    head->next->next->next->next = new Node(50);
 
     // Print
     printList(head);
