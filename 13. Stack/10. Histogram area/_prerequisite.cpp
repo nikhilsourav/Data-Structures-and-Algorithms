@@ -1,3 +1,7 @@
+/*
+    Prerequisite for Histogram area
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

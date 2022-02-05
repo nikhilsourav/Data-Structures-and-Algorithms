@@ -1,4 +1,6 @@
 /*
+    // https://bit.ly/3qHNdnQ
+
     Incomplete
 */
 
@@ -101,5 +103,3 @@ int main()
     // print
     printList(head);
 }
-
-// https://bit.ly/3qHNdnQ

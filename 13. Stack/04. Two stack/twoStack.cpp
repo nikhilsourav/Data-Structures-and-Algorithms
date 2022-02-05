@@ -1,3 +1,15 @@
+/*
+    Create a data structure twoStacks that represents, well, two stacks.
+    Implementation of twoStacks should use only one array, i.e., both 
+    stacks should use the same array for storing elements.
+
+    push1(int x) –> pushes x to first stack 
+    push2(int x) –> pushes x to second stack
+    pop1() –> pops an element from first stack and return the popped element 
+    pop2() –> pops an element from second stack and return the popped element
+    Implementation of twoStack should be space efficient.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -91,7 +103,7 @@ int main()
     // Initialize
     TwoStacks tstk(5);
 
-    // push elements in both stack
+    // Push elements in both stack
     tstk.push1(5);
     tstk.push2(10);
     tstk.push2(15);

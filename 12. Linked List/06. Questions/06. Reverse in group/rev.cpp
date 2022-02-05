@@ -1,6 +1,7 @@
 /*
     Given a sorted signly linked list, reverse it in group of k
 */
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -17,7 +18,7 @@ public:
     }
 };
 
-// print
+// Print
 void printList(Node *ptr)
 {
     while (ptr != NULL)
@@ -28,7 +29,7 @@ void printList(Node *ptr)
     cout << "\n";
 }
 
-// reverse groups
+// Reverse in groups
 Node *reverseGroups(Node *head, int k)
 {
     // init before and after pointer
@@ -58,7 +59,7 @@ Node *reverseGroups(Node *head, int k)
 // Driver code
 int main()
 {
-    // create linked list
+    // Create linked list
     Node *head = new Node(10);
     head->next = new Node(20);
     head->next->next = new Node(30);
@@ -67,12 +68,12 @@ int main()
     head->next->next->next->next->next = new Node(60);
     head->next->next->next->next->next->next = new Node(70);
 
-    // print
+    // Print
     printList(head);
 
     // reverse in groups of k
     head = reverseGroups(head, 3);
 
-    // print
+    // Print
     printList(head);
 }

@@ -1,6 +1,8 @@
 /*
     Check if a number is power of 2 or not
     eg: 64 => true
+
+    Concept: Power of two has only one bit set
 */
 
 #include <bits/stdc++.h>
@@ -42,7 +44,3 @@ int main()
     cout << powerOfTwo(num) << "\n";
     cout << towsPowerUsingBriansAlgorithm(num) << "\n";
 }
-
-/*
-    NOTE: Power of two has only one bit set
-*/

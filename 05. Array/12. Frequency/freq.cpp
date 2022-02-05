@@ -4,7 +4,6 @@
     => freq 10 = 1
     => freq 11 = 2
     => freq 13 = 1
-
 */
 
 #include <bits/stdc++.h>
@@ -36,6 +35,6 @@ int main()
     int arr[] = {10, 10, 10, 10};
     int size = sizeof(arr) / sizeof(arr[0]);
 
-    // display frequency
+    // Output
     printFrequency(arr, size);
 }

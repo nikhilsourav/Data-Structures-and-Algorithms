@@ -6,7 +6,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// extension of kaden's algorithm
+// Extension of kaden's algorithm
 int maxEvenOdd(int arr[], int size)
 {
     // init vars:

@@ -1,3 +1,8 @@
+/*
+    * Worst case O(n^2)
+    * Unstable
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

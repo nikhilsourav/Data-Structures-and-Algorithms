@@ -63,7 +63,7 @@ Node *rotateList(Node *head, int k)
 // Driver code
 int main()
 {
-    // create a linked list
+    // Create a linked list
     Node *head = new Node(2);
     head->next = new Node(4);
     head->next->next = new Node(7);
@@ -71,12 +71,12 @@ int main()
     head->next->next->next->next = new Node(9);
     int k = 3;
 
-    // print
+    // Print
     printlist(head);
 
     // fn call
     head = rotateList(head, k);
 
-    // print
+    // Print
     printlist(head);
 }

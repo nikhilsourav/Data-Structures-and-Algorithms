@@ -1,6 +1,5 @@
 /*
-    Given two singly linked list.
-    Merge two sorted list retaining order
+    Merge two sorted singly linked list  
 */
 
 #include <bits/stdc++.h>
@@ -19,7 +18,7 @@ public:
     }
 };
 
-// print
+// Print
 void printlist(Node *head)
 {
     Node *curr = head;
@@ -31,8 +30,8 @@ void printlist(Node *head)
     cout << endl;
 }
 
-// sort fn
-Node *sortedMerge(Node *head1, Node *head2)
+// Merge two sorted list
+Node *merge(Node *head1, Node *head2)
 {
     // if list is empty
     if (head1 == NULL)
@@ -93,5 +92,5 @@ int main()
     head2->next = new Node(35);
 
     // fn call
-    printlist(sortedMerge(head1, head2));
+    printlist(merge(head1, head2));
 }

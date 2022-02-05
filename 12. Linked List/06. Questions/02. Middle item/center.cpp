@@ -2,6 +2,7 @@
     Given a singly linked list, find the middle element
     if list is even return (n/2 + 1)th element (1 based indexing)
 */
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -18,7 +19,7 @@ public:
     }
 };
 
-// insert
+// Find middle element
 int middleElement(Node *head)
 {
     // if list is empty
@@ -39,7 +40,7 @@ int middleElement(Node *head)
     return slow->data;
 }
 
-// print
+// Print
 void printList(Node *ptr)
 {
     while (ptr != NULL)
@@ -53,15 +54,15 @@ void printList(Node *ptr)
 // Driver code
 int main()
 {
-    // create linked list
+    // Create linked list
     Node *head = new Node(10);
     head->next = new Node(20);
     head->next->next = new Node(30);
     head->next->next->next = new Node(40);
 
-    // print
+    // Print
     printList(head);
 
-    // print middle element
+    // Print middle element
     cout << middleElement(head);
 }

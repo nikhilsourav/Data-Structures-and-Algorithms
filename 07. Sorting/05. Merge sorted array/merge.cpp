@@ -1,3 +1,8 @@
+/*
+    Given two sorted array merge them such that the
+    resultant array is sorted. Print resultant array
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

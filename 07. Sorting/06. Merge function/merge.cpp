@@ -1,3 +1,15 @@
+/*
+    Given an array 'arr' and indices 'low', 'mid' and 'high'
+    sort them and merge them back to original array
+
+    Input
+    arr[] = [1, 2, 4, 1000, 2000, 4000, 2000, 3000, 2, 3, 4]
+    low = 3, mid = 5, high = 7
+
+    Output
+    arr[] = [1 2 4 1000 2000 2000 3000 4000 2 3 4]
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -37,13 +49,14 @@ void merge(int arr[], int low, int mid, int high)
 int main()
 {
     // Given array
-    int arr[] = {1, 2, 4, 1000, 2000, 4000, 2000, 3000, 2, 3, 4};
+    int arr[] = {20, 6, 14, 1000, 2000, 4000, 2000, 3000, 52, 3, 9};
     int n = sizeof(arr) / sizeof(arr[0]);
+    int low = 3, mid = 5, high = 7;
 
     // fn call (merge from index 3 to 7)
-    merge(arr, 3, 5, 7);
+    merge(arr, low, mid, high);
 
-    // output
+    // Output
     for (auto x : arr)
         cout << x << " ";
 }

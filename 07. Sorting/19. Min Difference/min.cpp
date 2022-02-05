@@ -1,6 +1,8 @@
 /*
-    Given an array of integers. Find the minimum absolute difference in this array.
-    eg [5,3,2] => kabs(3-5) = 2
+    Given an array of integers. Find the minimum absolute
+    difference in this array.
+
+    eg [5,3,2] => min abs(3-5) = 2
 */
 
 #include <bits/stdc++.h>

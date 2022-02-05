@@ -1,6 +1,34 @@
 /*
     Traverse and print elements of linked list
     eg: [2->3->1->7] => 2,3,1,7
+
+    => The pointer (*ptr) in print() and the pointer (*head) in main are diff.
+    => If we change pointer to refer to something else, This change won't occur.
+    => But if we change value. It will reflect.
+
+    eg:
+        ptr++ will not change address stored in
+        *ptr = 30 will change head value
+
+    eg:
+        => consider a list with only one value = 10
+
+            +---+---+
+            | 10 | o------>NULL
+            +---+---+
+
+        => if we print this list with printList() fn twice like this:
+
+            printList(head);
+            printList(head);
+
+        => we may think that in the first fn call the head pointer becomes NULL
+           so it won't print the second time
+
+        => But turns out thats not the case! Since the pointer of main and pointer
+           of printList() fn are different, each time the 'head' (of main) is copied
+           to the pointer 'ptr' of  printList() fn, so the original 'head' of main fn
+           is not modified.
 */
 
 #include <bits/stdc++.h>
@@ -63,33 +91,3 @@ int main()
     cout << "\n";
     recPrint(head);
 }
-
-/*
-    => The pointer (*ptr) in print() and the pointer (*head) in main are diff.
-    => If we change pointer to refer to something else, This change won't occur.
-    => But if we change value. It will reflect.
-
-    eg:
-        ptr++ will not change address stored in
-        *ptr = 30 will change head value
-
-    eg:
-        => consider a list with only one value = 10
-
-            +---+---+
-            | 10 | o------>NULL
-            +---+---+
-
-        => if we print this list with printList() fn twice like this:
-
-            printList(head);
-            printList(head);
-
-        => we may think that in the first fn call the head pointer becomes NULL
-           so it won't print the second time
-
-        => But turns out thats not the case! Since the pointer of main and pointer
-           of printList() fn are different, each time the 'head' (of main) is copied
-           to the pointer 'ptr' of  printList() fn, so the original 'head' of main fn
-           is not modified.
-*/

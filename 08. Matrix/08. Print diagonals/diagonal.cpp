@@ -1,4 +1,14 @@
-// C++ Program to print the Diagonals of a Matrix
+/*
+	Given a matrix print its diagonals
+	1, 2, 3, 4
+	5, 6, 7, 8
+	1, 2, 3, 4
+	5, 6, 7, 8
+
+	Principal Diagonal: 1, 6, 3, 8,
+	Secondary Diagonal: 4, 7, 2, 5,
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

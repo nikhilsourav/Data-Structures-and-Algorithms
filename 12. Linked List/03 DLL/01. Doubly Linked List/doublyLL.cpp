@@ -1,5 +1,17 @@
 /*
     Implementation of doubly linked list
+
+    Advantages of doubly linked list:
+
+        => can be traversed in both directions
+        => Delete in O(1) time
+        => Insert / Delete before a given node
+        => Insert / Delete from both ends in O(1) time by maintaining tail
+    
+    Disadvantages of doubly linked list:
+    
+        => Extra space for prev
+        => Code becomes complex
 */
 
 #include <bits/stdc++.h>
@@ -48,17 +60,3 @@ int main()
     cout << second->next << " " << &(third->prev) << "\n";
     cout << head->prev << " " << third->next << "\n";
 }
-
-/*
-    Advantages of doubly linked list:
-
-        => can be traversed in both directions
-        => Delete in O(1) time
-        => Insert / Delete before a given node
-        => Insert / Delete from both ends in O(1) time by maintaining tail
-    
-    Disadvantages of doubly linked list:
-    
-        => Extra space for prev
-        => Code becomes complex
-*/

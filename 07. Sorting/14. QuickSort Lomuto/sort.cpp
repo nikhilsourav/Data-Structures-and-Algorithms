@@ -1,3 +1,8 @@
+/*
+    * Worst case O(n^2)
+    * Unstable
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -46,7 +51,7 @@ int main()
     // fn call
     QuickSort(arr, 0, n - 1);
 
-    // output
+    // Output
     for (int x : arr)
         cout << x << " ";
 }

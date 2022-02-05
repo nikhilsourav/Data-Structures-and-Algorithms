@@ -31,7 +31,7 @@ int main()
     // fn call
     reverseArr(arr, size);
 
-    // output
+    // Output
     for (int i = 0; i < size; i++)
         cout << arr[i] << " ";
 }

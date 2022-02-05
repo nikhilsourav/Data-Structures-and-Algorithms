@@ -29,7 +29,6 @@ public:
     First locate the node before the left node (pre)
     and also locate the left node (curr). Then move
     curr -> next to be after pre for right - left times.
-
 */
 ListNode *reverseBetween(ListNode *head, int left, int right)
 {
@@ -74,7 +73,7 @@ void printList(ListNode *head)
 // Driver code
 int main()
 {
-    // create linked list
+    // Create linked list
     ListNode *head = new ListNode(10);
     head->next = new ListNode(20);
     head->next->next = new ListNode(30);
@@ -82,12 +81,12 @@ int main()
     head->next->next->next->next = new ListNode(50);
     head->next->next->next->next->next = new ListNode(60);
 
-    // print
+    // Print
     printList(head);
 
-    // reverse list
+    // fn call
     head = reverseBetween(head, 1, 2);
 
-    // print
+    // Print
     printList(head);
 }

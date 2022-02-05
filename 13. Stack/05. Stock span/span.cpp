@@ -1,8 +1,11 @@
 /*
-    Given an array of integers representing prices of a stock on n consecutive days.
-    Find span of stock on each day. Span on a day is number of consecutive days including
-    current day and days just before it which have value equal or smaller.
-    eg: [13,15,12,14,16,8,6,4,10,13] => [1,2,1,2,5,1,1,1,4,10] 
+    Given an array of integers representing prices of a stock
+    on n consecutive days. Find span of stock on each day.
+    Span on a day is number of consecutive days including
+    current day and days just before it which have value
+    equal or smaller.
+
+    eg: [13,15,12,14,16,8,6,4,10,13] => [1,2,1,2,5,1,1,1,4,10]
 */
 
 #include <bits/stdc++.h>
@@ -36,7 +39,7 @@ vector<int> printSpan(int arr[], int n)
         stk.push(i);
     }
 
-    // return 
+    // return
     return result;
 }
 

@@ -9,8 +9,8 @@ using namespace std;
 const LL MOD = 1000000007;
 
 /*
- Remember: (x + y) % mod = (x % mod + y % mod) % mod
- Time complexity O(log (y))
+    Remember: (x + y) % mod = (x % mod + y % mod) % mod
+    Time complexity O(log (y))
 */
 LL fastModuloExponent(LL x, LL y, LL MOD)
 {

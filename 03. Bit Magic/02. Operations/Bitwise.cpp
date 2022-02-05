@@ -1,3 +1,6 @@
+/*
+    Introduction to bitwise operators
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

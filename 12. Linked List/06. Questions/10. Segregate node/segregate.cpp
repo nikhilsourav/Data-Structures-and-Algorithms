@@ -1,11 +1,12 @@
 /*
     Given a sorted signly linked list, 
-    segregate even and odd nodevenStart retaining order 
+    segregate even and odd node retaining order 
     eg:
         i/p: 17->15->8->12->10->5->4
         o/p: 8->12->10->4->17->15->5
 
 */
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -22,7 +23,7 @@ public:
     }
 };
 
-// print
+// Print
 void printList(Node *ptr)
 {
     while (ptr != NULL)
@@ -33,7 +34,7 @@ void printList(Node *ptr)
     cout << "\n";
 }
 
-// segregate
+// Segregate
 Node *segregate(Node *head)
 {
     // init vars
@@ -95,7 +96,7 @@ Node *segregate(Node *head)
 // Driver code
 int main()
 {
-    // create linked list
+    // Create linked list
     Node *head = new Node(17);
     head->next = new Node(15);
     head->next->next = new Node(8);
@@ -104,12 +105,12 @@ int main()
     head->next->next->next->next->next = new Node(5);
     head->next->next->next->next->next->next = new Node(4);
 
-    // print
+    // Print
     printList(head);
 
-    // segregate elements
+    // Segregate elements
     head = segregate(head);
 
-    // print
+    // Print
     printList(head);
 }

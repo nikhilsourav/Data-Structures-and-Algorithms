@@ -1,6 +1,7 @@
 /*
     Given a sorted signly linked list, remove all duplicates
 */
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -17,7 +18,7 @@ public:
     }
 };
 
-// print
+// Print
 void printList(Node *ptr)
 {
     while (ptr != NULL)
@@ -28,8 +29,8 @@ void printList(Node *ptr)
     cout << "\n";
 }
 
-// ================= remove duplicates using two pointer =============== //
-// remove head
+// ================= Remove duplicates using two pointer =============== //
+// Remove head
 Node *deleteHead(Node *head)
 {
     if (head == NULL)
@@ -39,7 +40,7 @@ Node *deleteHead(Node *head)
     return newHead;
 }
 
-// remove dups
+// Remove dups
 Node *removeDups(Node *head)
 {
     // remove duplicates using two pointer (similar to array)
@@ -73,7 +74,7 @@ Node *removeDups(Node *head)
     return head;
 }
 
-// ================= remove duplicates =============== //
+// ================= Remove duplicates =============== //
 Node *removeDup(Node *head)
 {
     // traverse pointer ptr
@@ -101,18 +102,18 @@ Node *removeDup(Node *head)
 // Driver code
 int main()
 {
-    // create linked list
+    // Create linked list
     Node *head = new Node(10);
     head->next = new Node(20);
     head->next->next = new Node(20);
     head->next->next->next = new Node(40);
 
-    // print
+    // Print
     printList(head);
 
-    // remove duplicates
+    // Remove duplicates
     head = removeDup(head);
 
-    // print
+    // Print
     printList(head);
 }

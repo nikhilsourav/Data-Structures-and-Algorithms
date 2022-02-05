@@ -15,7 +15,16 @@ using namespace std;
 #define pii pair<int, int>
 #define pb push_back
 
-// Find max activity
+/*
+    ALGORITHM:
+
+    1. Sort according to finish time
+    2. Initialize solution as first activity
+    3. Do following for remaining items
+        a. if current activity doesn't overlap with last 
+           picked activity add this activity to solution
+        b. oterhwise ignore
+*/
 int activitySelection(vi start, vi finish)
 {
     // init size
@@ -61,15 +70,3 @@ int main()
     // fn call
     cout << activitySelection(start, finish);
 }
-
-/*
-    ALGORITHM:
-
-    1. Sort according to finish time
-    2. Initialize solution as first activity
-    3. Do following for remaining items
-        a. if current activity doesn't overlap with last 
-           picked activity add this activity to solution
-
-        b. oterhwise ignore
-*/

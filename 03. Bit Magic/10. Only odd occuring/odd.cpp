@@ -11,7 +11,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// O(n)
+// Time: O(n)
 int findOddOccurance(int arr[], int n)
 {
     // init vars

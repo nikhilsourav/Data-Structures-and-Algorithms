@@ -1,6 +1,8 @@
 /*
-    Given a sorted singly linked list, insert an item retaining the order
+    Given a sorted singly linked list, insert an item 
+    retaining the order of the linked list
 */
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -17,7 +19,7 @@ public:
     }
 };
 
-// insert
+// Insert item in singly linked list retaining order
 Node *insert(Node *head, int val)
 {
     // create a node
@@ -47,7 +49,7 @@ Node *insert(Node *head, int val)
     return head;
 }
 
-// print
+// Print
 void printList(Node *ptr)
 {
     while (ptr != NULL)
@@ -61,18 +63,18 @@ void printList(Node *ptr)
 // Driver code
 int main()
 {
-    // create linked list with data in ascending order
+    // Create linked list with data in ascending order
     Node *head = new Node(10);
     head->next = new Node(20);
     head->next->next = new Node(30);
     head->next->next->next = new Node(40);
 
-    // print
+    // Print
     printList(head);
 
-    // insert
+    // Insert
     head = insert(head, 25);
 
-    // print
+    // Print
     printList(head);
 }

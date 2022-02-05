@@ -1,6 +1,7 @@
 /*
-    Given a rope of length n. Cut this rope into maximum number of pieces such that
-    every piece has length as either a, b or c
+    Given a rope of length n. Cut this rope into maximum 
+    number of pieces such that every piece has length as
+    either a, b or c
 */
 
 #include <bits/stdc++.h>

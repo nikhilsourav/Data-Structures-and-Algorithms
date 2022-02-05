@@ -3,6 +3,7 @@
     in an array of size n. return any index.
     eg: [6, 8, 4, 8, 8] => 8
 */
+
 #include <bits/stdc++.h>
 using namespace std;
 

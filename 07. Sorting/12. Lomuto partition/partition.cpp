@@ -1,3 +1,8 @@
+/*
+    * Partition around last element
+    * Unstable
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -120,18 +120,18 @@ Node *mergeSort(Node *head)
 // Driver code
 int main()
 {
-    // create a linked list
+    // Create a linked list
     Node *head = new Node(4);
     head->next = new Node(2);
     head->next->next = new Node(1);
     head->next->next->next = new Node(3);
 
-    // print
+    // Print
     printlist(head);
 
     // fn call
     head = mergeSort(head);
 
-    // print
+    // Print
     printlist(head);
 }

@@ -1,6 +1,12 @@
 /*
-    Check if a string has balanced paranthesis
-    eg: str = "()(]" => false
+    Given a string containing only '(', ')', '{', '}', '[' and ']'
+    Check if the string has balanced paranthesis
+
+    eg: str = "()(]"
+    output: false
+
+    str = "{}[()]"
+    output: true
 */
 
 #include <bits/stdc++.h>

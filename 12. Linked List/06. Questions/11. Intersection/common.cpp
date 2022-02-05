@@ -1,11 +1,7 @@
 /*
-    Given a sorted signly linked list, 
-    getIntersection even and odd nodevenStart retaining order 
-    eg:
-        i/p: 17->15->8->12->10->5->4
-        o/p: 8->12->10->4->17->15->5
-
+    Given a signly linked list, Find intersection point
 */
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -22,7 +18,7 @@ public:
     }
 };
 
-// print
+// Print
 void printList(Node *ptr)
 {
     while (ptr != NULL)
@@ -33,7 +29,7 @@ void printList(Node *ptr)
     cout << "\n";
 }
 
-// size of list
+// Size of list
 int getCount(Node *head)
 {
     // curr to traverse
@@ -53,7 +49,7 @@ int getCount(Node *head)
     return count;
 }
 
-// get intersection logic
+// Get intersection logic
 int _getIntersection(int diff, Node *head1, Node *head2)
 {
     // init two pointers to traverse
@@ -82,7 +78,7 @@ int _getIntersection(int diff, Node *head1, Node *head2)
     return -1;
 }
 
-// get intersection given function
+// Get intersection given function
 int getIntersection(Node *head1, Node *head2)
 {
     // size of each list
@@ -105,35 +101,29 @@ int getIntersection(Node *head1, Node *head2)
 // Driver code
 int main()
 {
-    /* 
-		Creation of two linked lists 
-	
-		1st 3->6->9->15->30 
-		2nd 10->15->30 
-	
-		15 is the intersection point 
-	*/
+    /*
+        Create two linked lists
 
-    Node *newNode;
+        First list: 10->15->30
+        Second list: 3->6->9->15->30
 
+        15 is the intersection point
+    */
+
+    // Common node
+    Node *common = new Node(15);
+
+    // First list
     Node *head1 = new Node(10);
+    head1->next = common;
+    head1->next->next = new Node(30);
 
+    // Second list
     Node *head2 = new Node(3);
-
-    newNode = new Node(6);
-    head2->next = newNode;
-
-    newNode = new Node(9);
-    head2->next->next = newNode;
-
-    newNode = new Node(15);
-    head1->next = newNode;
-    head2->next->next->next = newNode;
-
-    newNode = new Node(30);
-    head1->next->next = newNode;
-
-    head1->next->next->next = NULL;
+    head2->next = new Node(6);
+    head2->next->next = new Node(9);
+    head2->next->next->next = common;
+    head2->next->next->next->next = new Node(30);
 
     // fn call
     cout << getIntersection(head1, head2);

@@ -1,3 +1,11 @@
+/*
+    Introduction to pointer to a structure
+
+    To access members of structure using the structure variable,
+    we used the dot '.' operator but when we have a pointer 
+    of structure type, we use arrow -> to access structure members.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -30,9 +38,3 @@ int main()
     // Output
     cout << ptr2->name << " " << ptr2->price << "\n";
 }
-
-/*
-    To access members of structure using the structure variable, 
-    we used the dot . operator. But when we have a pointer of structure 
-    type, we use arrow -> to access structure members.
-*/

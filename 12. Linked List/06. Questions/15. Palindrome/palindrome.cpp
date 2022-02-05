@@ -1,3 +1,9 @@
+/*
+    Given a linked list check whether it is a plindrome
+
+    eg: a->b->a
+    output: true
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -14,7 +20,7 @@ public:
     }
 };
 
-// reverse list fn
+// Reverse list fn
 Node *reverseList(Node *head)
 {
     // if list is empty
@@ -31,7 +37,7 @@ Node *reverseList(Node *head)
     return rest_head;
 }
 
-// check palindrome
+// Check palindrome
 bool isPalindrome(Node *head)
 {
     // if list is empty
@@ -68,7 +74,7 @@ bool isPalindrome(Node *head)
 // Driver code
 int main()
 {
-    // create new linked list
+    // Create new linked list
     Node *head = new Node('g');
     head->next = new Node('f');
     head->next->next = new Node('g');

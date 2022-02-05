@@ -1,10 +1,21 @@
+/*
+    Given a matrix that is row wise and column wise sorted
+    Search an element in this matrix
+
+    ALGORITHM:
+    * Begin from top right
+    * If target is same, found
+    * If target is small move left
+    * If target is greater move down
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
 // Global const
 const int ROW = 4, COLUMN = 4;
 
-// Given matrix is row-wise and column-wise sorted
+// Print index of element
 void search(int mat[ROW][COLUMN], int target)
 {
     // init vars
@@ -38,11 +49,3 @@ int main()
     // fn call
     search(arr, target);
 }
-
-/*
-    ALGORITHM: 
-    * Begin from top right
-    * If target is same, found
-    * If target is small move left
-    * If target is greater move down
-*/

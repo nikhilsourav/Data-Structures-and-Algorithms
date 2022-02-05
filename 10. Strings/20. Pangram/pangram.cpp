@@ -8,7 +8,7 @@ using namespace std;
 
 const int CHAR = 256;
 
-// pangram without using set
+// Pangram without using set
 bool checkPangram(string &str)
 {
     // initialize an array of 256 chars with all elements as 0

@@ -18,7 +18,7 @@ public:
     }
 };
 
-// print list
+// Print list
 void printList_1(Node *head)
 {
     // if list is empty
@@ -37,7 +37,7 @@ void printList_1(Node *head)
     cout << "\n";
 }
 
-// print list
+// Print list
 void printList_2(Node *head)
 {
     // if list is empty
@@ -56,13 +56,13 @@ void printList_2(Node *head)
 // Driver code
 int main()
 {
-    // create a singly circular linked list
+    // Create a singly circular linked list
     Node *head = new Node(10);
     head->next = new Node(20);
     head->next->next = new Node(30);
     head->next->next->next = new Node(40);
     head->next->next->next->next = head; // last node point to head
 
-    // print
+    // Print
     printList_2(head);
 }

@@ -1,3 +1,7 @@
+/*
+    Methods to pass a matrix as a function parameter
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

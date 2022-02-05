@@ -1,5 +1,6 @@
 /*
-    Given a sorted array and an element x, we need to count occurrences of x in the array.
+    Given a sorted array and an element x,
+    count occurrences of x in the array.
 */
 
 #include <bits/stdc++.h>

@@ -1,3 +1,11 @@
+/*
+    Given list
+    1->2->3->4->5
+
+    Swap the list pair-wise by adjusting links
+    2->1->4->3->5
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -14,7 +22,7 @@ public:
     }
 };
 
-// print
+// Print
 void printlist(Node *head)
 {
     Node *curr = head;
@@ -26,7 +34,7 @@ void printlist(Node *head)
     cout << endl;
 }
 
-// pairwise swap list without data swapping
+// Pairwise swap list without data swapping
 Node *pairwiseSwap(Node *head)
 {
     // corner case
@@ -57,19 +65,19 @@ Node *pairwiseSwap(Node *head)
 // Driver code
 int main()
 {
-    // create a linked list
+    // Create a linked list
     Node *head = new Node(1);
     head->next = new Node(2);
     head->next->next = new Node(3);
     head->next->next->next = new Node(4);
     head->next->next->next->next = new Node(5);
 
-    // print
+    // Print
     printlist(head);
 
     // fn call
     head = pairwiseSwap(head);
 
-    // print
+    // Print
     printlist(head);
 }

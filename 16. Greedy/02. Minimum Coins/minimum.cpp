@@ -3,7 +3,7 @@
     which is equal to given amount such that all greater
     valued coins are included
 
-    eg: 
+    eg:
         coins[] = {10, 5, 2, 1}
         amount 52
         sum = 5 * (10 rupee coin) + 1 * (2 rupee coin)
@@ -15,14 +15,28 @@
         sum = 1 * (9 rupee coin) + 2 * (1 rupee coin)
         Total coin = 3
 
-        Note: 
-        1 * (6 rupee coin) + 1 * (5 rupee coin) 
-        is also possible which gives total coin = 2 but 
+        Note:
+        1 * (6 rupee coin) + 1 * (5 rupee coin)
+        is also possible which gives total coin = 2 but
         in question we're asked to include higher value coins
 */
 
 #include <bits/stdc++.h>
 using namespace std;
+
+/*
+    In this problem, if coins[]
+    has random values Greedy approach provides
+    different result than expected
+
+    consider:
+
+        coins[] = {18, 1, 10}
+        amount = 20
+
+        ans based on above approach = 3 (18 + 1 + 1)
+        actual ans = 2 (10 + 10)
+*/
 
 // Return min number of coins
 int minCoins(int coin[], int n, int amount)
@@ -67,17 +81,3 @@ int main()
     // fn call
     cout << minCoins(coin, n, amount);
 }
-
-/*
-    In the above problem, if coins[]
-    has random values Greedy approach provides
-    different result than expected
-
-    consider:
-    
-        coins[] = {18, 1, 10}
-        amount = 20
-
-        ans based on above approach = 3 (18 + 1 + 1)
-        actual ans = 2 (10 + 10)
-*/

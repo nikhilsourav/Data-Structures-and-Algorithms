@@ -1,3 +1,12 @@
+/*
+    Given an array find kth smallest element
+
+    arr[] = {10, 4, 5, 8, 11, 6, 26};
+    k = 4
+
+    output: 8 
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

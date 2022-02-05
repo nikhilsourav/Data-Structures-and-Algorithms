@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// node Struct
+// Node Struct
 struct ListNode
 {
     int val;
@@ -11,7 +11,7 @@ struct ListNode
     ListNode(int x, ListNode *next) : val(x), next(next){};
 };
 
-// segregate even and odd
+// Segregate even and odd
 ListNode *oddEvenList(ListNode *head)
 {
     // corner case
@@ -74,7 +74,7 @@ ListNode *oddEvenList(ListNode *head)
     return oddStart;
 }
 
-// prinlist
+// Printlist
 void printList(ListNode *head)
 {
     while (head != NULL)
@@ -88,13 +88,19 @@ void printList(ListNode *head)
 // Driver code
 int main()
 {
+    // Create linked list
     ListNode *head = new ListNode(1);
     head->next = new ListNode(2);
     head->next->next = new ListNode(3);
     head->next->next->next = new ListNode(4);
     head->next->next->next->next = new ListNode(5);
 
+    // Print
     printList(head);
+
+    // Segregate
     head = oddEvenList(head);
+
+    // Print
     printList(head);
 }

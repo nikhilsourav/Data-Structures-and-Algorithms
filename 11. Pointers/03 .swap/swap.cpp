@@ -1,3 +1,7 @@
+/*
+    Given two numbers swap them with the help of pointers
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

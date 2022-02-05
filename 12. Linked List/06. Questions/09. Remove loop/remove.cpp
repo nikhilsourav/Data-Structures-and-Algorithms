@@ -2,6 +2,7 @@
     Given a sorted signly linked list, 
     find and remove a loop if it exists
 */
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -18,7 +19,7 @@ public:
     }
 };
 
-// print
+// Print
 void printList(Node *ptr)
 {
     while (ptr != NULL)
@@ -29,7 +30,7 @@ void printList(Node *ptr)
     cout << "\n";
 }
 
-// detect and remove loop
+// Detect and remove loop
 Node *removeLoop(Node *head)
 {
     // init fast and slow pointer
@@ -66,16 +67,16 @@ Node *removeLoop(Node *head)
 // Driver code
 int main()
 {
-    // create linked list with loop
+    // Create linked list with loop
     Node *head = new Node(15);
     head->next = new Node(10);
     head->next->next = new Node(12);
     head->next->next->next = new Node(20);
     head->next->next->next->next = head->next;
 
-    // detect and remove loop
+    // Detect and remove loop
     head = removeLoop(head);
 
-    // print
+    // Print
     printList(head);
 }

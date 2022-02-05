@@ -54,9 +54,8 @@ int main()
     int n = sizeof(arr1) / sizeof(arr1[0]);
     int m = sizeof(arr2) / sizeof(arr2[0]);
 
-    // output
+    // Output
     vector<int> answer = printIntersection(arr1, arr2, n, m);
-
     for (auto x : answer)
         cout << x << " ";
 }

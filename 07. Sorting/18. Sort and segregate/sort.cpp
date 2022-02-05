@@ -1,7 +1,14 @@
+/*
+    Given an array that consists of only '0', '1' and '2'
+    integer values. Sort the array
+
+    https://www.youtube.com/watch?v=oaVa-9wmpns
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// Dutch national flag https://www.youtube.com/watch?v=oaVa-9wmpns
+// Sort array of 0, 1, 2
 void sort012(int arr[], int size)
 {
     // init vars
@@ -30,7 +37,11 @@ void sort012(int arr[], int size)
     }
 }
 
-// Segregate +ve and -ve
+/*
+    Given an array of positive and negative integer values.
+    Segregate all -ve followed by all +ve values
+*/
+
 void segregatePosNeg(int arr[], int size)
 {
     // init vars:
@@ -70,7 +81,7 @@ int main()
     // sort 0, 1 and 2
     sort012(arr1, n1);
 
-    // output
+    // Output
     for (auto x : arr1)
         cout << x << " ";
 
@@ -78,10 +89,10 @@ int main()
     int arr2[] = {-12, 19, -10, 15};
     int n2 = sizeof(arr2) / sizeof(arr2[0]);
 
-    // segregate +ve and -ve
+    // Segregate +ve and -ve
     segregatePosNeg(arr2, n2);
 
-    // output
+    // Output
     cout << "\n";
     for (auto x : arr2)
         cout << x << " ";

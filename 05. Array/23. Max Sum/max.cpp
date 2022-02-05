@@ -5,7 +5,7 @@
     The only operation allowed is to rotate(clock-wise or counter clock-wise) 
     the array any number of times.
 
-    explaination : https://www.youtube.com/watch?v=3YNs_Ggqb-Q&t=32s
+    Explaination : https://www.youtube.com/watch?v=3YNs_Ggqb-Q&t=32s
 */
 
 #include <bits/stdc++.h>

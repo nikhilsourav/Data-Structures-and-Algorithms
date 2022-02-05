@@ -1,3 +1,7 @@
+/*
+    Introduction to matrix
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -42,7 +46,7 @@ int main()
     }
 
     /*
-        ============== Array of Pointers ================ 
+        ============== Array of Pointers ================
         * arr3 is not a pointer so to acces arr3[0] we write print(arr3[0])
         * arr3 gets memory in Stack
     */

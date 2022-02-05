@@ -1,6 +1,7 @@
 /*
     Given a sorted signly linked list, check whether it has loops
 */
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -17,7 +18,7 @@ public:
     }
 };
 
-// print
+// Print
 void printList(Node *ptr)
 {
     while (ptr != NULL)
@@ -28,7 +29,7 @@ void printList(Node *ptr)
     cout << "\n";
 }
 
-// floyd cycle detection
+// Floyd cycle detection
 bool hasLoop(Node *head)
 {
     // init slow and fast
@@ -50,13 +51,13 @@ bool hasLoop(Node *head)
 // Driver code
 int main()
 {
-    // create linked list with loop
+    // Create linked list with loop
     Node *head = new Node(10);
     head->next = new Node(20);
     head->next->next = new Node(30);
     head->next->next->next = new Node(40);
     head->next->next->next->next = head;
 
-    // detect loop
+    // Detect loop
     cout << boolalpha << hasLoop(head);
 }

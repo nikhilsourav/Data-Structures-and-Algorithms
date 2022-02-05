@@ -15,7 +15,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// maximum count of smaller elements on right side.
+// Maximum count of smaller elements on right side.
 int maxCount(vector<int> &arr)
 {
     // init
