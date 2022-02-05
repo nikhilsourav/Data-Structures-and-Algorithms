@@ -115,7 +115,7 @@ int main()
     printList(head);
 
     // insert 70 at pos 2
-    head = insertPos(head, 70, 4);
+    head = insertPos(head, 70, 2);
 
     // print
     printList(head);
