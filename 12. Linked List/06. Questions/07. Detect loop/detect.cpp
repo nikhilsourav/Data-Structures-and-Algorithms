@@ -29,7 +29,7 @@ void printList(Node *ptr)
     cout << "\n";
 }
 
-// Check whether linked list has loops
+// Method 1: Hashing
 bool hasLoop(Node *head)
 {
     // store elements while traversing
@@ -49,6 +49,20 @@ bool hasLoop(Node *head)
     return false;
 }
 
+// Method 2: Floyd's algorithm
+bool checkLoop(Node *head)
+{
+    Node *slow = head, *fast = head;
+    while (fast != NULL and fast->next != NULL)
+    {
+        slow = slow->next;
+        fast = fast->next->next;
+        if (slow == fast)
+            return true;
+    }
+    return false;
+}
+
 // Driver code
 int main()
 {
@@ -60,5 +74,5 @@ int main()
     head->next->next->next->next = head;
 
     // Detect loop
-    cout << boolalpha << hasLoop(head);
+    cout << boolalpha << checkLoop(head);
 }
