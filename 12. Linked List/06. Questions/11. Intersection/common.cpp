@@ -1,5 +1,5 @@
 /*
-    https://bit.ly/3LeBvLh    
+    https://bit.ly/3LeBvLh
 
     Given two signly linked list, Find intersection point
 */
@@ -31,73 +31,46 @@ void printList(Node *ptr)
     cout << "\n";
 }
 
-// Size of list
-int getCount(Node *head)
+int intersectPoint(Node *head1, Node *head2)
 {
-    // curr to traverse
-    Node *curr = head;
+    // init vars
+    Node *curr1 = head1, *curr2 = head2;
+    int size1 = 0, size2 = 0;
 
-    // init count
-    int count = 0;
-
-    // count logic:
-    while (curr != NULL)
+    // size of first list
+    while (curr1 != NULL)
     {
-        count++;
-        curr = curr->next;
+        size1++;
+        curr1 = curr1->next;
     }
 
-    // answer
-    return count;
-}
-
-// Get intersection logic
-int _getIntersection(int diff, Node *head1, Node *head2)
-{
-    // init two pointers to traverse
-    Node *current1 = head1;
-    Node *current2 = head2;
-
-    // move list 'diff' unit forward
-    for (int i = 0; i < diff; i++)
+    // size of second list
+    while (curr2 != NULL)
     {
-        if (current1 == NULL)
-            return -1;
-        current1 = current1->next;
+        size2++;
+        curr2 = curr2->next;
     }
 
-    // after both list start at equal length, find data
-    while (current1 != NULL && current2 != NULL)
-    {
-        if (current1 == current2)
-            return current1->data;
+    // difference between size
+    int diff = size1 >= size2 ? size1 - size2 : size2 - size1;
 
-        current1 = current1->next;
-        current2 = current2->next;
-    }
-
-    // if not found
-    return -1;
-}
-
-// Get intersection given function
-int getIntersection(Node *head1, Node *head2)
-{
-    // size of each list
-    int count1 = getCount(head1);
-    int count2 = getCount(head2);
-
-    // init difference variable
-    int diff;
-
-    // logic
-    if (count1 > count2)
-        diff = count1 - count2;
+    // adjust size
+    if (size1 >= size2)
+        for (int i = 0; i < diff; i++)
+            head1 = head1->next;
     else
-        diff = count2 - count1;
+        for (int i = 0; i < diff; i++)
+            head2 = head2->next;
 
-    // answer
-    return _getIntersection(diff, head2, head1);
+    // find required node
+    while (head1 != head2)
+    {
+        head1 = head1->next;
+        head2 = head2->next;
+    }
+
+    // result
+    return head1->data;
 }
 
 // Driver code
@@ -128,5 +101,5 @@ int main()
     head2->next->next->next->next = new Node(30);
 
     // fn call
-    cout << getIntersection(head1, head2);
+    cout << intersectPoint(head1, head2);
 }
