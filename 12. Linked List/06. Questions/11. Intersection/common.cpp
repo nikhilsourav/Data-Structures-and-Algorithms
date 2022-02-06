@@ -1,5 +1,7 @@
 /*
-    Given a signly linked list, Find intersection point
+    https://bit.ly/3LeBvLh    
+
+    Given two signly linked list, Find intersection point
 */
 
 #include <bits/stdc++.h>
