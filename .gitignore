@@ -1,3 +1,4 @@
 # IGNORE EXECUTABLES
 *.exe
 *.vscode
+*.out
