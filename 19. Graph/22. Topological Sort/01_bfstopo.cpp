@@ -71,8 +71,7 @@ int main()
     }
 
     // fn call (cc auto traversed)
-    vector<int> res;
-    res = topsort(numOfVert);
+    vector<int> res = topsort(numOfVert);
 
     // result
     cout << "Topological Sorting:\n";
